@@ -1,0 +1,48 @@
+.include "macros.inc"
+.file "auto_fn_8007A9FC_text"
+
+# 0x8007A9FC..0x8007AA80 | size: 0x84
+.text
+.balign 4
+
+# .text:0x0 | 0x8007A9FC | size: 0x84
+.fn fn_8007A9FC, global
+/* 8007A9FC 00075BFC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8007AA00 00075C00  7C 08 02 A6 */	mflr r0
+/* 8007AA04 00075C04  3C 60 80 5E */	lis r3, lbl_805DE384@ha
+/* 8007AA08 00075C08  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8007AA0C 00075C0C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8007AA10 00075C10  3B E3 E3 84 */	addi r31, r3, lbl_805DE384@l
+/* 8007AA14 00075C14  93 C1 00 08 */	stw r30, 0x8(r1)
+/* 8007AA18 00075C18  3B C0 00 00 */	li r30, 0x0
+/* 8007AA1C 00075C1C  93 C3 E3 84 */	stw r30, lbl_805DE384@l(r3)
+/* 8007AA20 00075C20  38 7F 00 18 */	addi r3, r31, 0x18
+/* 8007AA24 00075C24  93 DF 00 04 */	stw r30, 0x4(r31)
+/* 8007AA28 00075C28  93 DF 00 08 */	stw r30, 0x8(r31)
+/* 8007AA2C 00075C2C  93 DF 00 0C */	stw r30, 0xc(r31)
+/* 8007AA30 00075C30  93 DF 00 10 */	stw r30, 0x10(r31)
+/* 8007AA34 00075C34  93 DF 00 14 */	stw r30, 0x14(r31)
+/* 8007AA38 00075C38  48 1C 48 D9 */	bl fn_8023F310
+/* 8007AA3C 00075C3C  88 1F 00 30 */	lbz r0, 0x30(r31)
+/* 8007AA40 00075C40  3C 80 80 08 */	lis r4, fn_8007AA80@ha
+/* 8007AA44 00075C44  3C A0 80 5E */	lis r5, lbl_805DE378@ha
+/* 8007AA48 00075C48  93 DF 00 34 */	stw r30, 0x34(r31)
+/* 8007AA4C 00075C4C  54 00 06 6E */	rlwinm r0, r0, 0, 25, 23
+/* 8007AA50 00075C50  7F E3 FB 78 */	mr r3, r31
+/* 8007AA54 00075C54  98 1F 00 30 */	stb r0, 0x30(r31)
+/* 8007AA58 00075C58  38 84 AA 80 */	addi r4, r4, fn_8007AA80@l
+/* 8007AA5C 00075C5C  38 A5 E3 78 */	addi r5, r5, lbl_805DE378@l
+/* 8007AA60 00075C60  93 DF 00 38 */	stw r30, 0x38(r31)
+/* 8007AA64 00075C64  48 17 BE 2D */	bl __register_global_object
+/* 8007AA68 00075C68  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8007AA6C 00075C6C  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8007AA70 00075C70  83 C1 00 08 */	lwz r30, 0x8(r1)
+/* 8007AA74 00075C74  7C 08 03 A6 */	mtlr r0
+/* 8007AA78 00075C78  38 21 00 10 */	addi r1, r1, 0x10
+/* 8007AA7C 00075C7C  4E 80 00 20 */	blr
+.endfn fn_8007A9FC
+
+# 0x802F0A98..0x802F0A9C | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_8007A9FC

@@ -1,0 +1,128 @@
+MEMORY
+{
+    text : origin = 0x80004000
+}
+
+SECTIONS
+{
+    GROUP:
+    {
+        .init ALIGN(0x4):{}
+        extab ALIGN(0x20):{}
+        extabindex ALIGN(0x4):{}
+        .text ALIGN(0x20):{}
+        .ctors ALIGN(0x20):{}
+        .dtors ALIGN(0x20):{}
+        .rodata ALIGN(0x20):{}
+        .data ALIGN(0x10):{}
+        .bss ALIGN(0x40):{}
+        .sdata ALIGN(0x10):{}
+        .sbss ALIGN(0x20):{}
+        .sdata2 ALIGN(0x10):{}
+        .sbss2 ALIGN(0x10):{}
+        .stack ALIGN(0x100):{}
+    } > text
+
+    _stack_end = _f_sbss2 + SIZEOF(.sbss2);
+    _stack_addr = (_stack_end + 0x20000 + 0x7) & ~0x7;
+    _db_stack_addr = (_stack_addr + 0x2000);
+    _db_stack_end = _stack_addr;
+    __ArenaLo = (_db_stack_addr + 0x7) & ~0x7;
+    __ArenaHi = 0x81700000;
+}
+
+FORCEACTIVE
+{
+    fn_8001A1F4
+    fn_80020688
+    fn_800424D4
+    fn_80048B34
+    fn_80053144
+    fn_800546D4
+    fn_8005A838
+    fn_8005E4E4
+    fn_80063968
+    fn_800653E0
+    fn_800659FC
+    fn_800672A0
+    fn_8006B364
+    fn_8006FC5C
+    fn_80071060
+    fn_800719B0
+    fn_8007244C
+    fn_80074BA4
+    fn_8007540C
+    fn_80077FC4
+    fn_80079614
+    fn_8007A9FC
+    fn_8007C3A4
+    fn_8007F07C
+    fn_8008021C
+    fn_8008138C
+    fn_800853C4
+    fn_80088F38
+    fn_80089C78
+    fn_8008C780
+    fn_800950F4
+    fn_800A85B8
+    fn_800AD320
+    fn_800B38D4
+    fn_800B73A0
+    fn_801103C4
+    fn_80111CC0
+    fn_80114654
+    fn_80119524
+    fn_8011D934
+    fn_8011F5D4
+    fn_8013325C
+    fn_8013ACD0
+    fn_80145EA0
+    fn_8014BA9C
+    fn_8014CD54
+    fn_8014DAC8
+    fn_8014E94C
+    fn_801584BC
+    fn_8015ED6C
+    fn_80163AC0
+    fn_8016817C
+    fn_8016A904
+    fn_8017FB24
+    fn_80191204
+    fn_801923BC
+    fn_801971F8
+    fn_8019D928
+    fn_8019FAC0
+    fn_801A0324
+    fn_801A110C
+    fn_801A1D50
+    fn_801A2688
+    fn_801AEEEC
+    fn_801B59E8
+    fn_801B7530
+    fn_801B9B18
+    fn_801BFD1C
+    fn_801C3554
+    fn_801C495C
+    fn_801D2BAC
+    fn_801D451C
+    fn_801D5C48
+    fn_801D7668
+    fn_801DC38C
+    fn_801E1618
+    fn_801E381C
+    fn_801E4220
+    fn_801E6564
+    fn_801E92B8
+    fn_801ECE78
+    fn_801EF4F8
+    __init_cpp_exceptions
+    __fini_cpp_exceptions
+    fn_802715E0
+    fn_802778B0
+    fn_80277E00
+    fn_80279250
+    fn_8027B880
+    fn_80284180
+    fn_802BA508
+    fn_802C1E00
+}

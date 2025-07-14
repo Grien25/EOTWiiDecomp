@@ -1,0 +1,45 @@
+.include "macros.inc"
+.file "auto_03_8028EB84_text"
+
+# 0x8028EB84..0x8028EBF0 | size: 0x6C
+.text
+.balign 4
+
+# .text:0x0 | 0x8028EB84 | size: 0x24
+.fn fn_8028EB84, global
+/* 8028EB84 00289D84  80 8D 8E 58 */	lwz r4, lbl_806AB258@sda21(r0)
+/* 8028EB88 00289D88  2C 04 00 00 */	cmpwi r4, 0x0
+/* 8028EB8C 00289D8C  4D 82 00 20 */	beqlr
+/* 8028EB90 00289D90  81 84 00 28 */	lwz r12, 0x28(r4)
+/* 8028EB94 00289D94  2C 0C 00 00 */	cmpwi r12, 0x0
+/* 8028EB98 00289D98  4D 82 00 20 */	beqlr
+/* 8028EB9C 00289D9C  7D 89 03 A6 */	mtctr r12
+/* 8028EBA0 00289DA0  4E 80 04 20 */	bctr
+/* 8028EBA4 00289DA4  4E 80 00 20 */	blr
+.endfn fn_8028EB84
+
+# .text:0x24 | 0x8028EBA8 | size: 0x24
+.fn fn_8028EBA8, global
+/* 8028EBA8 00289DA8  80 8D 8E 58 */	lwz r4, lbl_806AB258@sda21(r0)
+/* 8028EBAC 00289DAC  2C 04 00 00 */	cmpwi r4, 0x0
+/* 8028EBB0 00289DB0  4D 82 00 20 */	beqlr
+/* 8028EBB4 00289DB4  81 84 00 2C */	lwz r12, 0x2c(r4)
+/* 8028EBB8 00289DB8  2C 0C 00 00 */	cmpwi r12, 0x0
+/* 8028EBBC 00289DBC  4D 82 00 20 */	beqlr
+/* 8028EBC0 00289DC0  7D 89 03 A6 */	mtctr r12
+/* 8028EBC4 00289DC4  4E 80 04 20 */	bctr
+/* 8028EBC8 00289DC8  4E 80 00 20 */	blr
+.endfn fn_8028EBA8
+
+# .text:0x48 | 0x8028EBCC | size: 0x24
+.fn fn_8028EBCC, global
+/* 8028EBCC 00289DCC  80 8D 8E 58 */	lwz r4, lbl_806AB258@sda21(r0)
+/* 8028EBD0 00289DD0  2C 04 00 00 */	cmpwi r4, 0x0
+/* 8028EBD4 00289DD4  4D 82 00 20 */	beqlr
+/* 8028EBD8 00289DD8  81 84 00 30 */	lwz r12, 0x30(r4)
+/* 8028EBDC 00289DDC  2C 0C 00 00 */	cmpwi r12, 0x0
+/* 8028EBE0 00289DE0  4D 82 00 20 */	beqlr
+/* 8028EBE4 00289DE4  7D 89 03 A6 */	mtctr r12
+/* 8028EBE8 00289DE8  4E 80 04 20 */	bctr
+/* 8028EBEC 00289DEC  4E 80 00 20 */	blr
+.endfn fn_8028EBCC

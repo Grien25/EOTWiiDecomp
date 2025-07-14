@@ -1,0 +1,42 @@
+.include "macros.inc"
+.file "auto_03_8028FC54_text"
+
+# 0x8028FC54..0x8028FCB4 | size: 0x60
+.text
+.balign 4
+
+# .text:0x0 | 0x8028FC54 | size: 0x24
+.fn fn_8028FC54, global
+/* 8028FC54 0028AE54  7C 80 23 78 */	mr r0, r4
+/* 8028FC58 0028AE58  7C A4 2B 78 */	mr r4, r5
+/* 8028FC5C 0028AE5C  54 00 10 3A */	slwi r0, r0, 2
+/* 8028FC60 0028AE60  7C C5 33 78 */	mr r5, r6
+/* 8028FC64 0028AE64  7C 63 00 2E */	lwzx r3, r3, r0
+/* 8028FC68 0028AE68  7C E6 3B 78 */	mr r6, r7
+/* 8028FC6C 0028AE6C  7D 07 43 78 */	mr r7, r8
+/* 8028FC70 0028AE70  7D 28 4B 78 */	mr r8, r9
+/* 8028FC74 0028AE74  48 00 00 40 */	b fn_8028FCB4
+.endfn fn_8028FC54
+
+# .text:0x24 | 0x8028FC78 | size: 0x24
+.fn fn_8028FC78, global
+/* 8028FC78 0028AE78  7C 80 23 78 */	mr r0, r4
+/* 8028FC7C 0028AE7C  7C A4 2B 78 */	mr r4, r5
+/* 8028FC80 0028AE80  54 00 10 3A */	slwi r0, r0, 2
+/* 8028FC84 0028AE84  7C C5 33 78 */	mr r5, r6
+/* 8028FC88 0028AE88  7C 63 00 2E */	lwzx r3, r3, r0
+/* 8028FC8C 0028AE8C  7C E6 3B 78 */	mr r6, r7
+/* 8028FC90 0028AE90  7D 07 43 78 */	mr r7, r8
+/* 8028FC94 0028AE94  7D 28 4B 78 */	mr r8, r9
+/* 8028FC98 0028AE98  48 00 02 20 */	b fn_8028FEB8
+.endfn fn_8028FC78
+
+# .text:0x48 | 0x8028FC9C | size: 0x18
+.fn fn_8028FC9C, global
+/* 8028FC9C 0028AE9C  7C 80 23 78 */	mr r0, r4
+/* 8028FCA0 0028AEA0  7C A4 2B 78 */	mr r4, r5
+/* 8028FCA4 0028AEA4  54 00 10 3A */	slwi r0, r0, 2
+/* 8028FCA8 0028AEA8  7C C5 33 78 */	mr r5, r6
+/* 8028FCAC 0028AEAC  7C 63 00 2E */	lwzx r3, r3, r0
+/* 8028FCB0 0028AEB0  48 00 04 1C */	b fn_802900CC
+.endfn fn_8028FC9C

@@ -1,0 +1,921 @@
+.include "macros.inc"
+.file "auto_03_801F6CA0_text"
+
+# 0x801F6CA0..0x801F7658 | size: 0x9B8
+.text
+.balign 4
+
+# .text:0x0 | 0x801F6CA0 | size: 0x30
+.fn fn_801F6CA0, global
+/* 801F6CA0 001F1EA0  80 A3 00 00 */	lwz r5, 0x0(r3)
+/* 801F6CA4 001F1EA4  80 C3 00 04 */	lwz r6, 0x4(r3)
+/* 801F6CA8 001F1EA8  80 E3 00 08 */	lwz r7, 0x8(r3)
+/* 801F6CAC 001F1EAC  38 60 00 01 */	li r3, 0x1
+/* 801F6CB0 001F1EB0  2C 05 00 00 */	cmpwi r5, 0x0
+/* 801F6CB4 001F1EB4  2F 06 00 00 */	cmpwi cr6, r6, 0x0
+/* 801F6CB8 001F1EB8  2F 87 00 00 */	cmpwi cr7, r7, 0x0
+/* 801F6CBC 001F1EBC  4C 82 00 20 */	bnelr
+/* 801F6CC0 001F1EC0  4C 9A 00 20 */	bnelr cr6
+/* 801F6CC4 001F1EC4  4C 9E 00 20 */	bnelr cr7
+/* 801F6CC8 001F1EC8  38 60 00 00 */	li r3, 0x0
+/* 801F6CCC 001F1ECC  4E 80 00 20 */	blr
+.endfn fn_801F6CA0
+
+# .text:0x30 | 0x801F6CD0 | size: 0x3C
+.fn fn_801F6CD0, global
+/* 801F6CD0 001F1ED0  80 A3 00 00 */	lwz r5, 0x0(r3)
+/* 801F6CD4 001F1ED4  80 C4 00 00 */	lwz r6, 0x0(r4)
+/* 801F6CD8 001F1ED8  80 E3 00 04 */	lwz r7, 0x4(r3)
+/* 801F6CDC 001F1EDC  81 04 00 04 */	lwz r8, 0x4(r4)
+/* 801F6CE0 001F1EE0  81 23 00 08 */	lwz r9, 0x8(r3)
+/* 801F6CE4 001F1EE4  81 44 00 08 */	lwz r10, 0x8(r4)
+/* 801F6CE8 001F1EE8  38 60 00 01 */	li r3, 0x1
+/* 801F6CEC 001F1EEC  7C 05 30 00 */	cmpw r5, r6
+/* 801F6CF0 001F1EF0  7F 07 40 00 */	cmpw cr6, r7, r8
+/* 801F6CF4 001F1EF4  7F 89 50 00 */	cmpw cr7, r9, r10
+/* 801F6CF8 001F1EF8  4C 82 00 20 */	bnelr
+/* 801F6CFC 001F1EFC  4C 9A 00 20 */	bnelr cr6
+/* 801F6D00 001F1F00  4C 9E 00 20 */	bnelr cr7
+/* 801F6D04 001F1F04  38 60 00 00 */	li r3, 0x0
+/* 801F6D08 001F1F08  4E 80 00 20 */	blr
+.endfn fn_801F6CD0
+
+# .text:0x6C | 0x801F6D0C | size: 0x34
+.fn fn_801F6D0C, global
+/* 801F6D0C 001F1F0C  80 0C 00 00 */	lwz r0, 0x0(r12)
+/* 801F6D10 001F1F10  81 6C 00 04 */	lwz r11, 0x4(r12)
+/* 801F6D14 001F1F14  81 8C 00 08 */	lwz r12, 0x8(r12)
+/* 801F6D18 001F1F18  2C 0B 00 00 */	cmpwi r11, 0x0
+/* 801F6D1C 001F1F1C  7C 63 02 14 */	add r3, r3, r0
+/* 801F6D20 001F1F20  41 80 00 18 */	blt .L_801F6D38
+/* 801F6D24 001F1F24  7D 83 60 2E */	lwzx r12, r3, r12
+/* 801F6D28 001F1F28  7D 8C 5A 14 */	add r12, r12, r11
+/* 801F6D2C 001F1F2C  80 0C 00 04 */	lwz r0, 0x4(r12)
+/* 801F6D30 001F1F30  81 8C 00 00 */	lwz r12, 0x0(r12)
+/* 801F6D34 001F1F34  7C 63 02 14 */	add r3, r3, r0
+.L_801F6D38:
+/* 801F6D38 001F1F38  7D 89 03 A6 */	mtctr r12
+/* 801F6D3C 001F1F3C  4E 80 04 20 */	bctr
+.endfn fn_801F6D0C
+
+# .text:0xA0 | 0x801F6D40 | size: 0x34
+.fn fn_801F6D40, global
+/* 801F6D40 001F1F40  80 0C 00 00 */	lwz r0, 0x0(r12)
+/* 801F6D44 001F1F44  81 6C 00 04 */	lwz r11, 0x4(r12)
+/* 801F6D48 001F1F48  81 8C 00 08 */	lwz r12, 0x8(r12)
+/* 801F6D4C 001F1F4C  2C 0B 00 00 */	cmpwi r11, 0x0
+/* 801F6D50 001F1F50  7C 84 02 14 */	add r4, r4, r0
+/* 801F6D54 001F1F54  41 80 00 18 */	blt .L_801F6D6C
+/* 801F6D58 001F1F58  7D 84 60 2E */	lwzx r12, r4, r12
+/* 801F6D5C 001F1F5C  7D 8C 5A 14 */	add r12, r12, r11
+/* 801F6D60 001F1F60  80 0C 00 04 */	lwz r0, 0x4(r12)
+/* 801F6D64 001F1F64  81 8C 00 00 */	lwz r12, 0x0(r12)
+/* 801F6D68 001F1F68  7C 84 02 14 */	add r4, r4, r0
+.L_801F6D6C:
+/* 801F6D6C 001F1F6C  7D 89 03 A6 */	mtctr r12
+/* 801F6D70 001F1F70  4E 80 04 20 */	bctr
+.endfn fn_801F6D40
+
+# .text:0xD4 | 0x801F6D74 | size: 0x28
+.fn fn_801F6D74, global
+/* 801F6D74 001F1F74  80 0C 00 00 */	lwz r0, 0x0(r12)
+/* 801F6D78 001F1F78  81 6C 00 04 */	lwz r11, 0x4(r12)
+/* 801F6D7C 001F1F7C  81 8C 00 08 */	lwz r12, 0x8(r12)
+/* 801F6D80 001F1F80  7C 63 02 14 */	add r3, r3, r0
+/* 801F6D84 001F1F84  2C 0B 00 00 */	cmpwi r11, 0x0
+/* 801F6D88 001F1F88  41 80 00 0C */	blt .L_801F6D94
+/* 801F6D8C 001F1F8C  7D 83 60 2E */	lwzx r12, r3, r12
+/* 801F6D90 001F1F90  7D 8C 58 2E */	lwzx r12, r12, r11
+.L_801F6D94:
+/* 801F6D94 001F1F94  7D 89 03 A6 */	mtctr r12
+/* 801F6D98 001F1F98  4E 80 04 20 */	bctr
+.endfn fn_801F6D74
+
+# .text:0xFC | 0x801F6D9C | size: 0x28
+.fn fn_801F6D9C, global
+/* 801F6D9C 001F1F9C  80 0C 00 00 */	lwz r0, 0x0(r12)
+/* 801F6DA0 001F1FA0  81 6C 00 04 */	lwz r11, 0x4(r12)
+/* 801F6DA4 001F1FA4  81 8C 00 08 */	lwz r12, 0x8(r12)
+/* 801F6DA8 001F1FA8  7C 84 02 14 */	add r4, r4, r0
+/* 801F6DAC 001F1FAC  2C 0B 00 00 */	cmpwi r11, 0x0
+/* 801F6DB0 001F1FB0  41 80 00 0C */	blt .L_801F6DBC
+/* 801F6DB4 001F1FB4  7D 84 60 2E */	lwzx r12, r4, r12
+/* 801F6DB8 001F1FB8  7D 8C 58 2E */	lwzx r12, r12, r11
+.L_801F6DBC:
+/* 801F6DBC 001F1FBC  7D 89 03 A6 */	mtctr r12
+/* 801F6DC0 001F1FC0  4E 80 04 20 */	bctr
+.endfn fn_801F6D9C
+
+# .text:0x124 | 0x801F6DC4 | size: 0x24
+.fn fn_801F6DC4, global
+/* 801F6DC4 001F1FC4  80 04 00 00 */	lwz r0, 0x0(r4)
+/* 801F6DC8 001F1FC8  80 C4 00 04 */	lwz r6, 0x4(r4)
+/* 801F6DCC 001F1FCC  7C 60 1A 14 */	add r3, r0, r3
+/* 801F6DD0 001F1FD0  80 04 00 08 */	lwz r0, 0x8(r4)
+/* 801F6DD4 001F1FD4  90 65 00 00 */	stw r3, 0x0(r5)
+/* 801F6DD8 001F1FD8  7C A3 2B 78 */	mr r3, r5
+/* 801F6DDC 001F1FDC  90 C5 00 04 */	stw r6, 0x4(r5)
+/* 801F6DE0 001F1FE0  90 05 00 08 */	stw r0, 0x8(r5)
+/* 801F6DE4 001F1FE4  4E 80 00 20 */	blr
+.endfn fn_801F6DC4
+
+# .text:0x148 | 0x801F6DE8 | size: 0x5C
+.fn fn_801F6DE8, global
+/* 801F6DE8 001F1FE8  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801F6DEC 001F1FEC  3C 80 80 2F */	lis r4, lbl_802F2360@ha
+/* 801F6DF0 001F1FF0  38 84 23 60 */	addi r4, r4, lbl_802F2360@l
+/* 801F6DF4 001F1FF4  38 60 00 00 */	li r3, 0x0
+/* 801F6DF8 001F1FF8  C8 04 00 00 */	lfd f0, 0x0(r4)
+/* 801F6DFC 001F1FFC  C8 64 00 08 */	lfd f3, 0x8(r4)
+/* 801F6E00 001F2000  C8 84 00 10 */	lfd f4, 0x10(r4)
+/* 801F6E04 001F2004  FC 01 00 00 */	fcmpu cr0, f1, f0
+/* 801F6E08 001F2008  FF 01 18 00 */	fcmpu cr6, f1, f3
+/* 801F6E0C 001F200C  41 80 00 30 */	blt .L_801F6E3C
+/* 801F6E10 001F2010  38 63 FF FF */	subi r3, r3, 0x1
+/* 801F6E14 001F2014  40 98 00 28 */	bge cr6, .L_801F6E3C
+/* 801F6E18 001F2018  FF 81 20 00 */	fcmpu cr7, f1, f4
+/* 801F6E1C 001F201C  FC 40 08 90 */	fmr f2, f1
+/* 801F6E20 001F2020  41 9C 00 08 */	blt cr7, .L_801F6E28
+/* 801F6E24 001F2024  FC 41 20 28 */	fsub f2, f1, f4
+.L_801F6E28:
+/* 801F6E28 001F2028  FC 40 10 1E */	fctiwz f2, f2
+/* 801F6E2C 001F202C  D8 41 00 08 */	stfd f2, 0x8(r1)
+/* 801F6E30 001F2030  80 61 00 0C */	lwz r3, 0xc(r1)
+/* 801F6E34 001F2034  41 9C 00 08 */	blt cr7, .L_801F6E3C
+/* 801F6E38 001F2038  3C 63 80 00 */	addis r3, r3, 0x8000
+.L_801F6E3C:
+/* 801F6E3C 001F203C  38 21 00 10 */	addi r1, r1, 0x10
+/* 801F6E40 001F2040  4E 80 00 20 */	blr
+.endfn fn_801F6DE8
+
+# .text:0x1A4 | 0x801F6E44 | size: 0x4C
+.fn __save_fpr, global
+# .text:0x1A4 | 0x801F6E44 | size: 0x0
+.sym _savefpr_14, global
+/* 801F6E44 001F2044  D9 CB FF 70 */	stfd f14, -0x90(r11)
+# .text:0x1A8 | 0x801F6E48 | size: 0x0
+.sym _savefpr_15, global
+/* 801F6E48 001F2048  D9 EB FF 78 */	stfd f15, -0x88(r11)
+# .text:0x1AC | 0x801F6E4C | size: 0x0
+.sym _savefpr_16, global
+/* 801F6E4C 001F204C  DA 0B FF 80 */	stfd f16, -0x80(r11)
+# .text:0x1B0 | 0x801F6E50 | size: 0x0
+.sym _savefpr_17, global
+/* 801F6E50 001F2050  DA 2B FF 88 */	stfd f17, -0x78(r11)
+# .text:0x1B4 | 0x801F6E54 | size: 0x0
+.sym _savefpr_18, global
+/* 801F6E54 001F2054  DA 4B FF 90 */	stfd f18, -0x70(r11)
+# .text:0x1B8 | 0x801F6E58 | size: 0x0
+.sym _savefpr_19, global
+/* 801F6E58 001F2058  DA 6B FF 98 */	stfd f19, -0x68(r11)
+# .text:0x1BC | 0x801F6E5C | size: 0x0
+.sym _savefpr_20, global
+/* 801F6E5C 001F205C  DA 8B FF A0 */	stfd f20, -0x60(r11)
+# .text:0x1C0 | 0x801F6E60 | size: 0x0
+.sym _savefpr_21, global
+/* 801F6E60 001F2060  DA AB FF A8 */	stfd f21, -0x58(r11)
+# .text:0x1C4 | 0x801F6E64 | size: 0x0
+.sym _savefpr_22, global
+/* 801F6E64 001F2064  DA CB FF B0 */	stfd f22, -0x50(r11)
+# .text:0x1C8 | 0x801F6E68 | size: 0x0
+.sym _savefpr_23, global
+/* 801F6E68 001F2068  DA EB FF B8 */	stfd f23, -0x48(r11)
+# .text:0x1CC | 0x801F6E6C | size: 0x0
+.sym _savefpr_24, global
+/* 801F6E6C 001F206C  DB 0B FF C0 */	stfd f24, -0x40(r11)
+# .text:0x1D0 | 0x801F6E70 | size: 0x0
+.sym _savefpr_25, global
+/* 801F6E70 001F2070  DB 2B FF C8 */	stfd f25, -0x38(r11)
+# .text:0x1D4 | 0x801F6E74 | size: 0x0
+.sym _savefpr_26, global
+/* 801F6E74 001F2074  DB 4B FF D0 */	stfd f26, -0x30(r11)
+# .text:0x1D8 | 0x801F6E78 | size: 0x0
+.sym _savefpr_27, global
+/* 801F6E78 001F2078  DB 6B FF D8 */	stfd f27, -0x28(r11)
+# .text:0x1DC | 0x801F6E7C | size: 0x0
+.sym _savefpr_28, global
+/* 801F6E7C 001F207C  DB 8B FF E0 */	stfd f28, -0x20(r11)
+# .text:0x1E0 | 0x801F6E80 | size: 0x0
+.sym _savefpr_29, global
+/* 801F6E80 001F2080  DB AB FF E8 */	stfd f29, -0x18(r11)
+# .text:0x1E4 | 0x801F6E84 | size: 0x0
+.sym _savefpr_30, global
+/* 801F6E84 001F2084  DB CB FF F0 */	stfd f30, -0x10(r11)
+# .text:0x1E8 | 0x801F6E88 | size: 0x0
+.sym _savefpr_31, global
+/* 801F6E88 001F2088  DB EB FF F8 */	stfd f31, -0x8(r11)
+/* 801F6E8C 001F208C  4E 80 00 20 */	blr
+.endfn __save_fpr
+
+# .text:0x1F0 | 0x801F6E90 | size: 0x4C
+.fn __restore_fpr, global
+# .text:0x1F0 | 0x801F6E90 | size: 0x0
+.sym _restfpr_14, global
+/* 801F6E90 001F2090  C9 CB FF 70 */	lfd f14, -0x90(r11)
+# .text:0x1F4 | 0x801F6E94 | size: 0x0
+.sym _restfpr_15, global
+/* 801F6E94 001F2094  C9 EB FF 78 */	lfd f15, -0x88(r11)
+# .text:0x1F8 | 0x801F6E98 | size: 0x0
+.sym _restfpr_16, global
+/* 801F6E98 001F2098  CA 0B FF 80 */	lfd f16, -0x80(r11)
+# .text:0x1FC | 0x801F6E9C | size: 0x0
+.sym _restfpr_17, global
+/* 801F6E9C 001F209C  CA 2B FF 88 */	lfd f17, -0x78(r11)
+# .text:0x200 | 0x801F6EA0 | size: 0x0
+.sym _restfpr_18, global
+/* 801F6EA0 001F20A0  CA 4B FF 90 */	lfd f18, -0x70(r11)
+# .text:0x204 | 0x801F6EA4 | size: 0x0
+.sym _restfpr_19, global
+/* 801F6EA4 001F20A4  CA 6B FF 98 */	lfd f19, -0x68(r11)
+# .text:0x208 | 0x801F6EA8 | size: 0x0
+.sym _restfpr_20, global
+/* 801F6EA8 001F20A8  CA 8B FF A0 */	lfd f20, -0x60(r11)
+# .text:0x20C | 0x801F6EAC | size: 0x0
+.sym _restfpr_21, global
+/* 801F6EAC 001F20AC  CA AB FF A8 */	lfd f21, -0x58(r11)
+# .text:0x210 | 0x801F6EB0 | size: 0x0
+.sym _restfpr_22, global
+/* 801F6EB0 001F20B0  CA CB FF B0 */	lfd f22, -0x50(r11)
+# .text:0x214 | 0x801F6EB4 | size: 0x0
+.sym _restfpr_23, global
+/* 801F6EB4 001F20B4  CA EB FF B8 */	lfd f23, -0x48(r11)
+# .text:0x218 | 0x801F6EB8 | size: 0x0
+.sym _restfpr_24, global
+/* 801F6EB8 001F20B8  CB 0B FF C0 */	lfd f24, -0x40(r11)
+# .text:0x21C | 0x801F6EBC | size: 0x0
+.sym _restfpr_25, global
+/* 801F6EBC 001F20BC  CB 2B FF C8 */	lfd f25, -0x38(r11)
+# .text:0x220 | 0x801F6EC0 | size: 0x0
+.sym _restfpr_26, global
+/* 801F6EC0 001F20C0  CB 4B FF D0 */	lfd f26, -0x30(r11)
+# .text:0x224 | 0x801F6EC4 | size: 0x0
+.sym _restfpr_27, global
+/* 801F6EC4 001F20C4  CB 6B FF D8 */	lfd f27, -0x28(r11)
+# .text:0x228 | 0x801F6EC8 | size: 0x0
+.sym _restfpr_28, global
+/* 801F6EC8 001F20C8  CB 8B FF E0 */	lfd f28, -0x20(r11)
+# .text:0x22C | 0x801F6ECC | size: 0x0
+.sym _restfpr_29, global
+/* 801F6ECC 001F20CC  CB AB FF E8 */	lfd f29, -0x18(r11)
+# .text:0x230 | 0x801F6ED0 | size: 0x0
+.sym _restfpr_30, global
+/* 801F6ED0 001F20D0  CB CB FF F0 */	lfd f30, -0x10(r11)
+# .text:0x234 | 0x801F6ED4 | size: 0x0
+.sym _restfpr_31, global
+/* 801F6ED4 001F20D4  CB EB FF F8 */	lfd f31, -0x8(r11)
+/* 801F6ED8 001F20D8  4E 80 00 20 */	blr
+.endfn __restore_fpr
+
+# .text:0x23C | 0x801F6EDC | size: 0x4C
+.fn __save_gpr, global
+# .text:0x23C | 0x801F6EDC | size: 0x0
+.sym _savegpr_14, global
+/* 801F6EDC 001F20DC  91 CB FF B8 */	stw r14, -0x48(r11)
+# .text:0x240 | 0x801F6EE0 | size: 0x0
+.sym _savegpr_15, global
+/* 801F6EE0 001F20E0  91 EB FF BC */	stw r15, -0x44(r11)
+# .text:0x244 | 0x801F6EE4 | size: 0x0
+.sym _savegpr_16, global
+/* 801F6EE4 001F20E4  92 0B FF C0 */	stw r16, -0x40(r11)
+# .text:0x248 | 0x801F6EE8 | size: 0x0
+.sym _savegpr_17, global
+/* 801F6EE8 001F20E8  92 2B FF C4 */	stw r17, -0x3c(r11)
+# .text:0x24C | 0x801F6EEC | size: 0x0
+.sym _savegpr_18, global
+/* 801F6EEC 001F20EC  92 4B FF C8 */	stw r18, -0x38(r11)
+# .text:0x250 | 0x801F6EF0 | size: 0x0
+.sym _savegpr_19, global
+/* 801F6EF0 001F20F0  92 6B FF CC */	stw r19, -0x34(r11)
+# .text:0x254 | 0x801F6EF4 | size: 0x0
+.sym _savegpr_20, global
+/* 801F6EF4 001F20F4  92 8B FF D0 */	stw r20, -0x30(r11)
+# .text:0x258 | 0x801F6EF8 | size: 0x0
+.sym _savegpr_21, global
+/* 801F6EF8 001F20F8  92 AB FF D4 */	stw r21, -0x2c(r11)
+# .text:0x25C | 0x801F6EFC | size: 0x0
+.sym _savegpr_22, global
+/* 801F6EFC 001F20FC  92 CB FF D8 */	stw r22, -0x28(r11)
+# .text:0x260 | 0x801F6F00 | size: 0x0
+.sym _savegpr_23, global
+/* 801F6F00 001F2100  92 EB FF DC */	stw r23, -0x24(r11)
+# .text:0x264 | 0x801F6F04 | size: 0x0
+.sym _savegpr_24, global
+/* 801F6F04 001F2104  93 0B FF E0 */	stw r24, -0x20(r11)
+# .text:0x268 | 0x801F6F08 | size: 0x0
+.sym _savegpr_25, global
+/* 801F6F08 001F2108  93 2B FF E4 */	stw r25, -0x1c(r11)
+# .text:0x26C | 0x801F6F0C | size: 0x0
+.sym _savegpr_26, global
+/* 801F6F0C 001F210C  93 4B FF E8 */	stw r26, -0x18(r11)
+# .text:0x270 | 0x801F6F10 | size: 0x0
+.sym _savegpr_27, global
+/* 801F6F10 001F2110  93 6B FF EC */	stw r27, -0x14(r11)
+# .text:0x274 | 0x801F6F14 | size: 0x0
+.sym _savegpr_28, global
+/* 801F6F14 001F2114  93 8B FF F0 */	stw r28, -0x10(r11)
+# .text:0x278 | 0x801F6F18 | size: 0x0
+.sym _savegpr_29, global
+/* 801F6F18 001F2118  93 AB FF F4 */	stw r29, -0xc(r11)
+# .text:0x27C | 0x801F6F1C | size: 0x0
+.sym _savegpr_30, global
+/* 801F6F1C 001F211C  93 CB FF F8 */	stw r30, -0x8(r11)
+# .text:0x280 | 0x801F6F20 | size: 0x0
+.sym _savegpr_31, global
+/* 801F6F20 001F2120  93 EB FF FC */	stw r31, -0x4(r11)
+/* 801F6F24 001F2124  4E 80 00 20 */	blr
+.endfn __save_gpr
+
+# .text:0x288 | 0x801F6F28 | size: 0x4C
+.fn __restore_gpr, global
+# .text:0x288 | 0x801F6F28 | size: 0x0
+.sym _restgpr_14, global
+/* 801F6F28 001F2128  81 CB FF B8 */	lwz r14, -0x48(r11)
+# .text:0x28C | 0x801F6F2C | size: 0x0
+.sym _restgpr_15, global
+/* 801F6F2C 001F212C  81 EB FF BC */	lwz r15, -0x44(r11)
+# .text:0x290 | 0x801F6F30 | size: 0x0
+.sym _restgpr_16, global
+/* 801F6F30 001F2130  82 0B FF C0 */	lwz r16, -0x40(r11)
+# .text:0x294 | 0x801F6F34 | size: 0x0
+.sym _restgpr_17, global
+/* 801F6F34 001F2134  82 2B FF C4 */	lwz r17, -0x3c(r11)
+# .text:0x298 | 0x801F6F38 | size: 0x0
+.sym _restgpr_18, global
+/* 801F6F38 001F2138  82 4B FF C8 */	lwz r18, -0x38(r11)
+# .text:0x29C | 0x801F6F3C | size: 0x0
+.sym _restgpr_19, global
+/* 801F6F3C 001F213C  82 6B FF CC */	lwz r19, -0x34(r11)
+# .text:0x2A0 | 0x801F6F40 | size: 0x0
+.sym _restgpr_20, global
+/* 801F6F40 001F2140  82 8B FF D0 */	lwz r20, -0x30(r11)
+# .text:0x2A4 | 0x801F6F44 | size: 0x0
+.sym _restgpr_21, global
+/* 801F6F44 001F2144  82 AB FF D4 */	lwz r21, -0x2c(r11)
+# .text:0x2A8 | 0x801F6F48 | size: 0x0
+.sym _restgpr_22, global
+/* 801F6F48 001F2148  82 CB FF D8 */	lwz r22, -0x28(r11)
+# .text:0x2AC | 0x801F6F4C | size: 0x0
+.sym _restgpr_23, global
+/* 801F6F4C 001F214C  82 EB FF DC */	lwz r23, -0x24(r11)
+# .text:0x2B0 | 0x801F6F50 | size: 0x0
+.sym _restgpr_24, global
+/* 801F6F50 001F2150  83 0B FF E0 */	lwz r24, -0x20(r11)
+# .text:0x2B4 | 0x801F6F54 | size: 0x0
+.sym _restgpr_25, global
+/* 801F6F54 001F2154  83 2B FF E4 */	lwz r25, -0x1c(r11)
+# .text:0x2B8 | 0x801F6F58 | size: 0x0
+.sym _restgpr_26, global
+/* 801F6F58 001F2158  83 4B FF E8 */	lwz r26, -0x18(r11)
+# .text:0x2BC | 0x801F6F5C | size: 0x0
+.sym _restgpr_27, global
+/* 801F6F5C 001F215C  83 6B FF EC */	lwz r27, -0x14(r11)
+# .text:0x2C0 | 0x801F6F60 | size: 0x0
+.sym _restgpr_28, global
+/* 801F6F60 001F2160  83 8B FF F0 */	lwz r28, -0x10(r11)
+# .text:0x2C4 | 0x801F6F64 | size: 0x0
+.sym _restgpr_29, global
+/* 801F6F64 001F2164  83 AB FF F4 */	lwz r29, -0xc(r11)
+# .text:0x2C8 | 0x801F6F68 | size: 0x0
+.sym _restgpr_30, global
+/* 801F6F68 001F2168  83 CB FF F8 */	lwz r30, -0x8(r11)
+# .text:0x2CC | 0x801F6F6C | size: 0x0
+.sym _restgpr_31, global
+/* 801F6F6C 001F216C  83 EB FF FC */	lwz r31, -0x4(r11)
+/* 801F6F70 001F2170  4E 80 00 20 */	blr
+.endfn __restore_gpr
+
+# .text:0x2D4 | 0x801F6F74 | size: 0xEC
+.fn __div2u, global
+/* 801F6F74 001F2174  2C 03 00 00 */	cmpwi r3, 0x0
+/* 801F6F78 001F2178  7C 60 00 34 */	cntlzw r0, r3
+/* 801F6F7C 001F217C  7C 89 00 34 */	cntlzw r9, r4
+/* 801F6F80 001F2180  40 82 00 08 */	bne .L_801F6F88
+/* 801F6F84 001F2184  38 09 00 20 */	addi r0, r9, 0x20
+.L_801F6F88:
+/* 801F6F88 001F2188  2C 05 00 00 */	cmpwi r5, 0x0
+/* 801F6F8C 001F218C  7C A9 00 34 */	cntlzw r9, r5
+/* 801F6F90 001F2190  7C CA 00 34 */	cntlzw r10, r6
+/* 801F6F94 001F2194  40 82 00 08 */	bne .L_801F6F9C
+/* 801F6F98 001F2198  39 2A 00 20 */	addi r9, r10, 0x20
+.L_801F6F9C:
+/* 801F6F9C 001F219C  7C 00 48 00 */	cmpw r0, r9
+/* 801F6FA0 001F21A0  21 40 00 40 */	subfic r10, r0, 0x40
+/* 801F6FA4 001F21A4  41 81 00 B0 */	bgt .L_801F7054
+/* 801F6FA8 001F21A8  39 29 00 01 */	addi r9, r9, 0x1
+/* 801F6FAC 001F21AC  21 29 00 40 */	subfic r9, r9, 0x40
+/* 801F6FB0 001F21B0  7C 00 4A 14 */	add r0, r0, r9
+/* 801F6FB4 001F21B4  7D 29 50 50 */	subf r9, r9, r10
+/* 801F6FB8 001F21B8  7D 29 03 A6 */	mtctr r9
+/* 801F6FBC 001F21BC  2C 09 00 20 */	cmpwi r9, 0x20
+/* 801F6FC0 001F21C0  38 E9 FF E0 */	subi r7, r9, 0x20
+/* 801F6FC4 001F21C4  41 80 00 10 */	blt .L_801F6FD4
+/* 801F6FC8 001F21C8  7C 68 3C 30 */	srw r8, r3, r7
+/* 801F6FCC 001F21CC  38 E0 00 00 */	li r7, 0x0
+/* 801F6FD0 001F21D0  48 00 00 18 */	b .L_801F6FE8
+.L_801F6FD4:
+/* 801F6FD4 001F21D4  7C 88 4C 30 */	srw r8, r4, r9
+/* 801F6FD8 001F21D8  20 E9 00 20 */	subfic r7, r9, 0x20
+/* 801F6FDC 001F21DC  7C 67 38 30 */	slw r7, r3, r7
+/* 801F6FE0 001F21E0  7D 08 3B 78 */	or r8, r8, r7
+/* 801F6FE4 001F21E4  7C 67 4C 30 */	srw r7, r3, r9
+.L_801F6FE8:
+/* 801F6FE8 001F21E8  2C 00 00 20 */	cmpwi r0, 0x20
+/* 801F6FEC 001F21EC  31 20 FF E0 */	subic r9, r0, 0x20
+/* 801F6FF0 001F21F0  41 80 00 10 */	blt .L_801F7000
+/* 801F6FF4 001F21F4  7C 83 48 30 */	slw r3, r4, r9
+/* 801F6FF8 001F21F8  38 80 00 00 */	li r4, 0x0
+/* 801F6FFC 001F21FC  48 00 00 18 */	b .L_801F7014
+.L_801F7000:
+/* 801F7000 001F2200  7C 63 00 30 */	slw r3, r3, r0
+/* 801F7004 001F2204  21 20 00 20 */	subfic r9, r0, 0x20
+/* 801F7008 001F2208  7C 89 4C 30 */	srw r9, r4, r9
+/* 801F700C 001F220C  7C 63 4B 78 */	or r3, r3, r9
+/* 801F7010 001F2210  7C 84 00 30 */	slw r4, r4, r0
+.L_801F7014:
+/* 801F7014 001F2214  39 40 FF FF */	li r10, -0x1
+/* 801F7018 001F2218  30 E7 00 00 */	addic r7, r7, 0x0
+.L_801F701C:
+/* 801F701C 001F221C  7C 84 21 14 */	adde r4, r4, r4
+/* 801F7020 001F2220  7C 63 19 14 */	adde r3, r3, r3
+/* 801F7024 001F2224  7D 08 41 14 */	adde r8, r8, r8
+/* 801F7028 001F2228  7C E7 39 14 */	adde r7, r7, r7
+/* 801F702C 001F222C  7C 06 40 10 */	subfc r0, r6, r8
+/* 801F7030 001F2230  7D 25 39 11 */	subfe. r9, r5, r7
+/* 801F7034 001F2234  41 80 00 10 */	blt .L_801F7044
+/* 801F7038 001F2238  7C 08 03 78 */	mr r8, r0
+/* 801F703C 001F223C  7D 27 4B 78 */	mr r7, r9
+/* 801F7040 001F2240  30 0A 00 01 */	addic r0, r10, 0x1
+.L_801F7044:
+/* 801F7044 001F2244  42 00 FF D8 */	bdnz .L_801F701C
+/* 801F7048 001F2248  7C 84 21 14 */	adde r4, r4, r4
+/* 801F704C 001F224C  7C 63 19 14 */	adde r3, r3, r3
+/* 801F7050 001F2250  4E 80 00 20 */	blr
+.L_801F7054:
+/* 801F7054 001F2254  38 80 00 00 */	li r4, 0x0
+/* 801F7058 001F2258  38 60 00 00 */	li r3, 0x0
+/* 801F705C 001F225C  4E 80 00 20 */	blr
+.endfn __div2u
+
+# .text:0x3C0 | 0x801F7060 | size: 0x138
+.fn fn_801F7060, global
+/* 801F7060 001F2260  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801F7064 001F2264  54 69 00 01 */	clrrwi. r9, r3, 31
+/* 801F7068 001F2268  41 82 00 0C */	beq .L_801F7074
+/* 801F706C 001F226C  20 84 00 00 */	subfic r4, r4, 0x0
+/* 801F7070 001F2270  7C 63 01 90 */	subfze r3, r3
+.L_801F7074:
+/* 801F7074 001F2274  91 21 00 08 */	stw r9, 0x8(r1)
+/* 801F7078 001F2278  54 AA 00 01 */	clrrwi. r10, r5, 31
+/* 801F707C 001F227C  41 82 00 0C */	beq .L_801F7088
+/* 801F7080 001F2280  20 C6 00 00 */	subfic r6, r6, 0x0
+/* 801F7084 001F2284  7C A5 01 90 */	subfze r5, r5
+.L_801F7088:
+/* 801F7088 001F2288  91 41 00 0C */	stw r10, 0xc(r1)
+/* 801F708C 001F228C  2C 03 00 00 */	cmpwi r3, 0x0
+/* 801F7090 001F2290  7C 60 00 34 */	cntlzw r0, r3
+/* 801F7094 001F2294  7C 89 00 34 */	cntlzw r9, r4
+/* 801F7098 001F2298  40 82 00 08 */	bne .L_801F70A0
+/* 801F709C 001F229C  38 09 00 20 */	addi r0, r9, 0x20
+.L_801F70A0:
+/* 801F70A0 001F22A0  2C 05 00 00 */	cmpwi r5, 0x0
+/* 801F70A4 001F22A4  7C A9 00 34 */	cntlzw r9, r5
+/* 801F70A8 001F22A8  7C CA 00 34 */	cntlzw r10, r6
+/* 801F70AC 001F22AC  40 82 00 08 */	bne .L_801F70B4
+/* 801F70B0 001F22B0  39 2A 00 20 */	addi r9, r10, 0x20
+.L_801F70B4:
+/* 801F70B4 001F22B4  7C 00 48 00 */	cmpw r0, r9
+/* 801F70B8 001F22B8  21 40 00 40 */	subfic r10, r0, 0x40
+/* 801F70BC 001F22BC  41 81 00 CC */	bgt .L_801F7188
+/* 801F70C0 001F22C0  39 29 00 01 */	addi r9, r9, 0x1
+/* 801F70C4 001F22C4  21 29 00 40 */	subfic r9, r9, 0x40
+/* 801F70C8 001F22C8  7C 00 4A 14 */	add r0, r0, r9
+/* 801F70CC 001F22CC  7D 29 50 50 */	subf r9, r9, r10
+/* 801F70D0 001F22D0  7D 29 03 A6 */	mtctr r9
+/* 801F70D4 001F22D4  2C 09 00 20 */	cmpwi r9, 0x20
+/* 801F70D8 001F22D8  38 E9 FF E0 */	subi r7, r9, 0x20
+/* 801F70DC 001F22DC  41 80 00 10 */	blt .L_801F70EC
+/* 801F70E0 001F22E0  7C 68 3C 30 */	srw r8, r3, r7
+/* 801F70E4 001F22E4  38 E0 00 00 */	li r7, 0x0
+/* 801F70E8 001F22E8  48 00 00 18 */	b .L_801F7100
+.L_801F70EC:
+/* 801F70EC 001F22EC  7C 88 4C 30 */	srw r8, r4, r9
+/* 801F70F0 001F22F0  20 E9 00 20 */	subfic r7, r9, 0x20
+/* 801F70F4 001F22F4  7C 67 38 30 */	slw r7, r3, r7
+/* 801F70F8 001F22F8  7D 08 3B 78 */	or r8, r8, r7
+/* 801F70FC 001F22FC  7C 67 4C 30 */	srw r7, r3, r9
+.L_801F7100:
+/* 801F7100 001F2300  2C 00 00 20 */	cmpwi r0, 0x20
+/* 801F7104 001F2304  31 20 FF E0 */	subic r9, r0, 0x20
+/* 801F7108 001F2308  41 80 00 10 */	blt .L_801F7118
+/* 801F710C 001F230C  7C 83 48 30 */	slw r3, r4, r9
+/* 801F7110 001F2310  38 80 00 00 */	li r4, 0x0
+/* 801F7114 001F2314  48 00 00 18 */	b .L_801F712C
+.L_801F7118:
+/* 801F7118 001F2318  7C 63 00 30 */	slw r3, r3, r0
+/* 801F711C 001F231C  21 20 00 20 */	subfic r9, r0, 0x20
+/* 801F7120 001F2320  7C 89 4C 30 */	srw r9, r4, r9
+/* 801F7124 001F2324  7C 63 4B 78 */	or r3, r3, r9
+/* 801F7128 001F2328  7C 84 00 30 */	slw r4, r4, r0
+.L_801F712C:
+/* 801F712C 001F232C  39 40 FF FF */	li r10, -0x1
+/* 801F7130 001F2330  30 E7 00 00 */	addic r7, r7, 0x0
+.L_801F7134:
+/* 801F7134 001F2334  7C 84 21 14 */	adde r4, r4, r4
+/* 801F7138 001F2338  7C 63 19 14 */	adde r3, r3, r3
+/* 801F713C 001F233C  7D 08 41 14 */	adde r8, r8, r8
+/* 801F7140 001F2340  7C E7 39 14 */	adde r7, r7, r7
+/* 801F7144 001F2344  7C 06 40 10 */	subfc r0, r6, r8
+/* 801F7148 001F2348  7D 25 39 11 */	subfe. r9, r5, r7
+/* 801F714C 001F234C  41 80 00 10 */	blt .L_801F715C
+/* 801F7150 001F2350  7C 08 03 78 */	mr r8, r0
+/* 801F7154 001F2354  7D 27 4B 78 */	mr r7, r9
+/* 801F7158 001F2358  30 0A 00 01 */	addic r0, r10, 0x1
+.L_801F715C:
+/* 801F715C 001F235C  42 00 FF D8 */	bdnz .L_801F7134
+/* 801F7160 001F2360  7C 84 21 14 */	adde r4, r4, r4
+/* 801F7164 001F2364  7C 63 19 14 */	adde r3, r3, r3
+/* 801F7168 001F2368  81 21 00 08 */	lwz r9, 0x8(r1)
+/* 801F716C 001F236C  81 41 00 0C */	lwz r10, 0xc(r1)
+/* 801F7170 001F2370  7D 27 52 79 */	xor. r7, r9, r10
+/* 801F7174 001F2374  41 82 00 10 */	beq .L_801F7184
+/* 801F7178 001F2378  2C 09 00 00 */	cmpwi r9, 0x0
+/* 801F717C 001F237C  20 84 00 00 */	subfic r4, r4, 0x0
+/* 801F7180 001F2380  7C 63 01 90 */	subfze r3, r3
+.L_801F7184:
+/* 801F7184 001F2384  48 00 00 0C */	b .L_801F7190
+.L_801F7188:
+/* 801F7188 001F2388  38 80 00 00 */	li r4, 0x0
+/* 801F718C 001F238C  38 60 00 00 */	li r3, 0x0
+.L_801F7190:
+/* 801F7190 001F2390  38 21 00 10 */	addi r1, r1, 0x10
+/* 801F7194 001F2394  4E 80 00 20 */	blr
+.endfn fn_801F7060
+
+# .text:0x4F8 | 0x801F7198 | size: 0xE4
+.fn __mod2u, global
+/* 801F7198 001F2398  2C 03 00 00 */	cmpwi r3, 0x0
+/* 801F719C 001F239C  7C 60 00 34 */	cntlzw r0, r3
+/* 801F71A0 001F23A0  7C 89 00 34 */	cntlzw r9, r4
+/* 801F71A4 001F23A4  40 82 00 08 */	bne .L_801F71AC
+/* 801F71A8 001F23A8  38 09 00 20 */	addi r0, r9, 0x20
+.L_801F71AC:
+/* 801F71AC 001F23AC  2C 05 00 00 */	cmpwi r5, 0x0
+/* 801F71B0 001F23B0  7C A9 00 34 */	cntlzw r9, r5
+/* 801F71B4 001F23B4  7C CA 00 34 */	cntlzw r10, r6
+/* 801F71B8 001F23B8  40 82 00 08 */	bne .L_801F71C0
+/* 801F71BC 001F23BC  39 2A 00 20 */	addi r9, r10, 0x20
+.L_801F71C0:
+/* 801F71C0 001F23C0  7C 00 48 00 */	cmpw r0, r9
+/* 801F71C4 001F23C4  21 40 00 40 */	subfic r10, r0, 0x40
+/* 801F71C8 001F23C8  41 81 00 B0 */	bgt .L_801F7278
+/* 801F71CC 001F23CC  39 29 00 01 */	addi r9, r9, 0x1
+/* 801F71D0 001F23D0  21 29 00 40 */	subfic r9, r9, 0x40
+/* 801F71D4 001F23D4  7C 00 4A 14 */	add r0, r0, r9
+/* 801F71D8 001F23D8  7D 29 50 50 */	subf r9, r9, r10
+/* 801F71DC 001F23DC  7D 29 03 A6 */	mtctr r9
+/* 801F71E0 001F23E0  2C 09 00 20 */	cmpwi r9, 0x20
+/* 801F71E4 001F23E4  38 E9 FF E0 */	subi r7, r9, 0x20
+/* 801F71E8 001F23E8  41 80 00 10 */	blt .L_801F71F8
+/* 801F71EC 001F23EC  7C 68 3C 30 */	srw r8, r3, r7
+/* 801F71F0 001F23F0  38 E0 00 00 */	li r7, 0x0
+/* 801F71F4 001F23F4  48 00 00 18 */	b .L_801F720C
+.L_801F71F8:
+/* 801F71F8 001F23F8  7C 88 4C 30 */	srw r8, r4, r9
+/* 801F71FC 001F23FC  20 E9 00 20 */	subfic r7, r9, 0x20
+/* 801F7200 001F2400  7C 67 38 30 */	slw r7, r3, r7
+/* 801F7204 001F2404  7D 08 3B 78 */	or r8, r8, r7
+/* 801F7208 001F2408  7C 67 4C 30 */	srw r7, r3, r9
+.L_801F720C:
+/* 801F720C 001F240C  2C 00 00 20 */	cmpwi r0, 0x20
+/* 801F7210 001F2410  31 20 FF E0 */	subic r9, r0, 0x20
+/* 801F7214 001F2414  41 80 00 10 */	blt .L_801F7224
+/* 801F7218 001F2418  7C 83 48 30 */	slw r3, r4, r9
+/* 801F721C 001F241C  38 80 00 00 */	li r4, 0x0
+/* 801F7220 001F2420  48 00 00 18 */	b .L_801F7238
+.L_801F7224:
+/* 801F7224 001F2424  7C 63 00 30 */	slw r3, r3, r0
+/* 801F7228 001F2428  21 20 00 20 */	subfic r9, r0, 0x20
+/* 801F722C 001F242C  7C 89 4C 30 */	srw r9, r4, r9
+/* 801F7230 001F2430  7C 63 4B 78 */	or r3, r3, r9
+/* 801F7234 001F2434  7C 84 00 30 */	slw r4, r4, r0
+.L_801F7238:
+/* 801F7238 001F2438  39 40 FF FF */	li r10, -0x1
+/* 801F723C 001F243C  30 E7 00 00 */	addic r7, r7, 0x0
+.L_801F7240:
+/* 801F7240 001F2440  7C 84 21 14 */	adde r4, r4, r4
+/* 801F7244 001F2444  7C 63 19 14 */	adde r3, r3, r3
+/* 801F7248 001F2448  7D 08 41 14 */	adde r8, r8, r8
+/* 801F724C 001F244C  7C E7 39 14 */	adde r7, r7, r7
+/* 801F7250 001F2450  7C 06 40 10 */	subfc r0, r6, r8
+/* 801F7254 001F2454  7D 25 39 11 */	subfe. r9, r5, r7
+/* 801F7258 001F2458  41 80 00 10 */	blt .L_801F7268
+/* 801F725C 001F245C  7C 08 03 78 */	mr r8, r0
+/* 801F7260 001F2460  7D 27 4B 78 */	mr r7, r9
+/* 801F7264 001F2464  30 0A 00 01 */	addic r0, r10, 0x1
+.L_801F7268:
+/* 801F7268 001F2468  42 00 FF D8 */	bdnz .L_801F7240
+/* 801F726C 001F246C  7D 04 43 78 */	mr r4, r8
+/* 801F7270 001F2470  7C E3 3B 78 */	mr r3, r7
+/* 801F7274 001F2474  4E 80 00 20 */	blr
+.L_801F7278:
+/* 801F7278 001F2478  4E 80 00 20 */	blr
+.endfn __mod2u
+
+# .text:0x5DC | 0x801F727C | size: 0x10C
+.fn fn_801F727C, global
+/* 801F727C 001F247C  2F 83 00 00 */	cmpwi cr7, r3, 0x0
+/* 801F7280 001F2480  40 9C 00 0C */	bge cr7, .L_801F728C
+/* 801F7284 001F2484  20 84 00 00 */	subfic r4, r4, 0x0
+/* 801F7288 001F2488  7C 63 01 90 */	subfze r3, r3
+.L_801F728C:
+/* 801F728C 001F248C  2C 05 00 00 */	cmpwi r5, 0x0
+/* 801F7290 001F2490  40 80 00 0C */	bge .L_801F729C
+/* 801F7294 001F2494  20 C6 00 00 */	subfic r6, r6, 0x0
+/* 801F7298 001F2498  7C A5 01 90 */	subfze r5, r5
+.L_801F729C:
+/* 801F729C 001F249C  2C 03 00 00 */	cmpwi r3, 0x0
+/* 801F72A0 001F24A0  7C 60 00 34 */	cntlzw r0, r3
+/* 801F72A4 001F24A4  7C 89 00 34 */	cntlzw r9, r4
+/* 801F72A8 001F24A8  40 82 00 08 */	bne .L_801F72B0
+/* 801F72AC 001F24AC  38 09 00 20 */	addi r0, r9, 0x20
+.L_801F72B0:
+/* 801F72B0 001F24B0  2C 05 00 00 */	cmpwi r5, 0x0
+/* 801F72B4 001F24B4  7C A9 00 34 */	cntlzw r9, r5
+/* 801F72B8 001F24B8  7C CA 00 34 */	cntlzw r10, r6
+/* 801F72BC 001F24BC  40 82 00 08 */	bne .L_801F72C4
+/* 801F72C0 001F24C0  39 2A 00 20 */	addi r9, r10, 0x20
+.L_801F72C4:
+/* 801F72C4 001F24C4  7C 00 48 00 */	cmpw r0, r9
+/* 801F72C8 001F24C8  21 40 00 40 */	subfic r10, r0, 0x40
+/* 801F72CC 001F24CC  41 81 00 AC */	bgt .L_801F7378
+/* 801F72D0 001F24D0  39 29 00 01 */	addi r9, r9, 0x1
+/* 801F72D4 001F24D4  21 29 00 40 */	subfic r9, r9, 0x40
+/* 801F72D8 001F24D8  7C 00 4A 14 */	add r0, r0, r9
+/* 801F72DC 001F24DC  7D 29 50 50 */	subf r9, r9, r10
+/* 801F72E0 001F24E0  7D 29 03 A6 */	mtctr r9
+/* 801F72E4 001F24E4  2C 09 00 20 */	cmpwi r9, 0x20
+/* 801F72E8 001F24E8  38 E9 FF E0 */	subi r7, r9, 0x20
+/* 801F72EC 001F24EC  41 80 00 10 */	blt .L_801F72FC
+/* 801F72F0 001F24F0  7C 68 3C 30 */	srw r8, r3, r7
+/* 801F72F4 001F24F4  38 E0 00 00 */	li r7, 0x0
+/* 801F72F8 001F24F8  48 00 00 18 */	b .L_801F7310
+.L_801F72FC:
+/* 801F72FC 001F24FC  7C 88 4C 30 */	srw r8, r4, r9
+/* 801F7300 001F2500  20 E9 00 20 */	subfic r7, r9, 0x20
+/* 801F7304 001F2504  7C 67 38 30 */	slw r7, r3, r7
+/* 801F7308 001F2508  7D 08 3B 78 */	or r8, r8, r7
+/* 801F730C 001F250C  7C 67 4C 30 */	srw r7, r3, r9
+.L_801F7310:
+/* 801F7310 001F2510  2C 00 00 20 */	cmpwi r0, 0x20
+/* 801F7314 001F2514  31 20 FF E0 */	subic r9, r0, 0x20
+/* 801F7318 001F2518  41 80 00 10 */	blt .L_801F7328
+/* 801F731C 001F251C  7C 83 48 30 */	slw r3, r4, r9
+/* 801F7320 001F2520  38 80 00 00 */	li r4, 0x0
+/* 801F7324 001F2524  48 00 00 18 */	b .L_801F733C
+.L_801F7328:
+/* 801F7328 001F2528  7C 63 00 30 */	slw r3, r3, r0
+/* 801F732C 001F252C  21 20 00 20 */	subfic r9, r0, 0x20
+/* 801F7330 001F2530  7C 89 4C 30 */	srw r9, r4, r9
+/* 801F7334 001F2534  7C 63 4B 78 */	or r3, r3, r9
+/* 801F7338 001F2538  7C 84 00 30 */	slw r4, r4, r0
+.L_801F733C:
+/* 801F733C 001F253C  39 40 FF FF */	li r10, -0x1
+/* 801F7340 001F2540  30 E7 00 00 */	addic r7, r7, 0x0
+.L_801F7344:
+/* 801F7344 001F2544  7C 84 21 14 */	adde r4, r4, r4
+/* 801F7348 001F2548  7C 63 19 14 */	adde r3, r3, r3
+/* 801F734C 001F254C  7D 08 41 14 */	adde r8, r8, r8
+/* 801F7350 001F2550  7C E7 39 14 */	adde r7, r7, r7
+/* 801F7354 001F2554  7C 06 40 10 */	subfc r0, r6, r8
+/* 801F7358 001F2558  7D 25 39 11 */	subfe. r9, r5, r7
+/* 801F735C 001F255C  41 80 00 10 */	blt .L_801F736C
+/* 801F7360 001F2560  7C 08 03 78 */	mr r8, r0
+/* 801F7364 001F2564  7D 27 4B 78 */	mr r7, r9
+/* 801F7368 001F2568  30 0A 00 01 */	addic r0, r10, 0x1
+.L_801F736C:
+/* 801F736C 001F256C  42 00 FF D8 */	bdnz .L_801F7344
+/* 801F7370 001F2570  7D 04 43 78 */	mr r4, r8
+/* 801F7374 001F2574  7C E3 3B 78 */	mr r3, r7
+.L_801F7378:
+/* 801F7378 001F2578  40 9C 00 0C */	bge cr7, .L_801F7384
+/* 801F737C 001F257C  20 84 00 00 */	subfic r4, r4, 0x0
+/* 801F7380 001F2580  7C 63 01 90 */	subfze r3, r3
+.L_801F7384:
+/* 801F7384 001F2584  4E 80 00 20 */	blr
+.endfn fn_801F727C
+
+# .text:0x6E8 | 0x801F7388 | size: 0x24
+.fn fn_801F7388, global
+/* 801F7388 001F2588  21 05 00 20 */	subfic r8, r5, 0x20
+/* 801F738C 001F258C  31 25 FF E0 */	subic r9, r5, 0x20
+/* 801F7390 001F2590  7C 63 28 30 */	slw r3, r3, r5
+/* 801F7394 001F2594  7C 8A 44 30 */	srw r10, r4, r8
+/* 801F7398 001F2598  7C 63 53 78 */	or r3, r3, r10
+/* 801F739C 001F259C  7C 8A 48 30 */	slw r10, r4, r9
+/* 801F73A0 001F25A0  7C 63 53 78 */	or r3, r3, r10
+/* 801F73A4 001F25A4  7C 84 28 30 */	slw r4, r4, r5
+/* 801F73A8 001F25A8  4E 80 00 20 */	blr
+.endfn fn_801F7388
+
+# .text:0x70C | 0x801F73AC | size: 0xB0
+.fn fn_801F73AC, global
+/* 801F73AC 001F25AC  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801F73B0 001F25B0  54 65 00 01 */	clrrwi. r5, r3, 31
+/* 801F73B4 001F25B4  41 82 00 0C */	beq .L_801F73C0
+/* 801F73B8 001F25B8  20 84 00 00 */	subfic r4, r4, 0x0
+/* 801F73BC 001F25BC  7C 63 01 90 */	subfze r3, r3
+.L_801F73C0:
+/* 801F73C0 001F25C0  7C 67 23 79 */	or. r7, r3, r4
+/* 801F73C4 001F25C4  38 C0 00 00 */	li r6, 0x0
+/* 801F73C8 001F25C8  41 82 00 80 */	beq .L_801F7448
+/* 801F73CC 001F25CC  7C 67 00 34 */	cntlzw r7, r3
+/* 801F73D0 001F25D0  7C 88 00 34 */	cntlzw r8, r4
+/* 801F73D4 001F25D4  54 E9 D0 08 */	extlwi r9, r7, 5, 26
+/* 801F73D8 001F25D8  7D 29 FE 70 */	srawi r9, r9, 31
+/* 801F73DC 001F25DC  7D 29 40 38 */	and r9, r9, r8
+/* 801F73E0 001F25E0  7C E7 4A 14 */	add r7, r7, r9
+/* 801F73E4 001F25E4  21 07 00 20 */	subfic r8, r7, 0x20
+/* 801F73E8 001F25E8  31 27 FF E0 */	subic r9, r7, 0x20
+/* 801F73EC 001F25EC  7C 63 38 30 */	slw r3, r3, r7
+/* 801F73F0 001F25F0  7C 8A 44 30 */	srw r10, r4, r8
+/* 801F73F4 001F25F4  7C 63 53 78 */	or r3, r3, r10
+/* 801F73F8 001F25F8  7C 8A 48 30 */	slw r10, r4, r9
+/* 801F73FC 001F25FC  7C 63 53 78 */	or r3, r3, r10
+/* 801F7400 001F2600  7C 84 38 30 */	slw r4, r4, r7
+/* 801F7404 001F2604  7C C7 30 50 */	subf r6, r7, r6
+/* 801F7408 001F2608  54 87 05 7E */	clrlwi r7, r4, 21
+/* 801F740C 001F260C  2C 07 04 00 */	cmpwi r7, 0x400
+/* 801F7410 001F2610  38 C6 04 3E */	addi r6, r6, 0x43e
+/* 801F7414 001F2614  41 80 00 1C */	blt .L_801F7430
+/* 801F7418 001F2618  41 81 00 0C */	bgt .L_801F7424
+/* 801F741C 001F261C  54 87 05 29 */	rlwinm. r7, r4, 0, 20, 20
+/* 801F7420 001F2620  41 82 00 10 */	beq .L_801F7430
+.L_801F7424:
+/* 801F7424 001F2624  30 84 08 00 */	addic r4, r4, 0x800
+/* 801F7428 001F2628  7C 63 01 94 */	addze r3, r3
+/* 801F742C 001F262C  7C C6 01 94 */	addze r6, r6
+.L_801F7430:
+/* 801F7430 001F2630  54 84 A8 3E */	rotrwi r4, r4, 11
+/* 801F7434 001F2634  50 64 A8 14 */	rlwimi r4, r3, 21, 0, 10
+/* 801F7438 001F2638  54 63 AB 3E */	extrwi r3, r3, 20, 1
+/* 801F743C 001F263C  54 C6 A0 16 */	slwi r6, r6, 20
+/* 801F7440 001F2640  7C C3 1B 78 */	or r3, r6, r3
+/* 801F7444 001F2644  7C A3 1B 78 */	or r3, r5, r3
+.L_801F7448:
+/* 801F7448 001F2648  90 61 00 08 */	stw r3, 0x8(r1)
+/* 801F744C 001F264C  90 81 00 0C */	stw r4, 0xc(r1)
+/* 801F7450 001F2650  C8 21 00 08 */	lfd f1, 0x8(r1)
+/* 801F7454 001F2654  38 21 00 10 */	addi r1, r1, 0x10
+/* 801F7458 001F2658  4E 80 00 20 */	blr
+.endfn fn_801F73AC
+
+# .text:0x7BC | 0x801F745C | size: 0xB4
+.fn fn_801F745C, global
+/* 801F745C 001F265C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801F7460 001F2660  54 65 00 01 */	clrrwi. r5, r3, 31
+/* 801F7464 001F2664  41 82 00 0C */	beq .L_801F7470
+/* 801F7468 001F2668  20 84 00 00 */	subfic r4, r4, 0x0
+/* 801F746C 001F266C  7C 63 01 90 */	subfze r3, r3
+.L_801F7470:
+/* 801F7470 001F2670  7C 67 23 79 */	or. r7, r3, r4
+/* 801F7474 001F2674  38 C0 00 00 */	li r6, 0x0
+/* 801F7478 001F2678  41 82 00 80 */	beq .L_801F74F8
+/* 801F747C 001F267C  7C 67 00 34 */	cntlzw r7, r3
+/* 801F7480 001F2680  7C 88 00 34 */	cntlzw r8, r4
+/* 801F7484 001F2684  54 E9 D0 08 */	extlwi r9, r7, 5, 26
+/* 801F7488 001F2688  7D 29 FE 70 */	srawi r9, r9, 31
+/* 801F748C 001F268C  7D 29 40 38 */	and r9, r9, r8
+/* 801F7490 001F2690  7C E7 4A 14 */	add r7, r7, r9
+/* 801F7494 001F2694  21 07 00 20 */	subfic r8, r7, 0x20
+/* 801F7498 001F2698  31 27 FF E0 */	subic r9, r7, 0x20
+/* 801F749C 001F269C  7C 63 38 30 */	slw r3, r3, r7
+/* 801F74A0 001F26A0  7C 8A 44 30 */	srw r10, r4, r8
+/* 801F74A4 001F26A4  7C 63 53 78 */	or r3, r3, r10
+/* 801F74A8 001F26A8  7C 8A 48 30 */	slw r10, r4, r9
+/* 801F74AC 001F26AC  7C 63 53 78 */	or r3, r3, r10
+/* 801F74B0 001F26B0  7C 84 38 30 */	slw r4, r4, r7
+/* 801F74B4 001F26B4  7C C7 30 50 */	subf r6, r7, r6
+/* 801F74B8 001F26B8  54 87 05 7E */	clrlwi r7, r4, 21
+/* 801F74BC 001F26BC  2C 07 04 00 */	cmpwi r7, 0x400
+/* 801F74C0 001F26C0  38 C6 04 3E */	addi r6, r6, 0x43e
+/* 801F74C4 001F26C4  41 80 00 1C */	blt .L_801F74E0
+/* 801F74C8 001F26C8  41 81 00 0C */	bgt .L_801F74D4
+/* 801F74CC 001F26CC  54 87 05 29 */	rlwinm. r7, r4, 0, 20, 20
+/* 801F74D0 001F26D0  41 82 00 10 */	beq .L_801F74E0
+.L_801F74D4:
+/* 801F74D4 001F26D4  30 84 08 00 */	addic r4, r4, 0x800
+/* 801F74D8 001F26D8  7C 63 01 94 */	addze r3, r3
+/* 801F74DC 001F26DC  7C C6 01 94 */	addze r6, r6
+.L_801F74E0:
+/* 801F74E0 001F26E0  54 84 A8 3E */	rotrwi r4, r4, 11
+/* 801F74E4 001F26E4  50 64 A8 14 */	rlwimi r4, r3, 21, 0, 10
+/* 801F74E8 001F26E8  54 63 AB 3E */	extrwi r3, r3, 20, 1
+/* 801F74EC 001F26EC  54 C6 A0 16 */	slwi r6, r6, 20
+/* 801F74F0 001F26F0  7C C3 1B 78 */	or r3, r6, r3
+/* 801F74F4 001F26F4  7C A3 1B 78 */	or r3, r5, r3
+.L_801F74F8:
+/* 801F74F8 001F26F8  90 61 00 08 */	stw r3, 0x8(r1)
+/* 801F74FC 001F26FC  90 81 00 0C */	stw r4, 0xc(r1)
+/* 801F7500 001F2700  C8 21 00 08 */	lfd f1, 0x8(r1)
+/* 801F7504 001F2704  FC 20 08 18 */	frsp f1, f1
+/* 801F7508 001F2708  38 21 00 10 */	addi r1, r1, 0x10
+/* 801F750C 001F270C  4E 80 00 20 */	blr
+.endfn fn_801F745C
+
+# .text:0x870 | 0x801F7510 | size: 0xA0
+.fn fn_801F7510, global
+/* 801F7510 001F2710  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801F7514 001F2714  7C 67 23 79 */	or. r7, r3, r4
+/* 801F7518 001F2718  38 C0 00 00 */	li r6, 0x0
+/* 801F751C 001F271C  41 82 00 7C */	beq .L_801F7598
+/* 801F7520 001F2720  7C 67 00 34 */	cntlzw r7, r3
+/* 801F7524 001F2724  7C 88 00 34 */	cntlzw r8, r4
+/* 801F7528 001F2728  54 E9 D0 08 */	extlwi r9, r7, 5, 26
+/* 801F752C 001F272C  7D 29 FE 70 */	srawi r9, r9, 31
+/* 801F7530 001F2730  7D 29 40 38 */	and r9, r9, r8
+/* 801F7534 001F2734  7C E7 4A 14 */	add r7, r7, r9
+/* 801F7538 001F2738  21 07 00 20 */	subfic r8, r7, 0x20
+/* 801F753C 001F273C  31 27 FF E0 */	subic r9, r7, 0x20
+/* 801F7540 001F2740  7C 63 38 30 */	slw r3, r3, r7
+/* 801F7544 001F2744  7C 8A 44 30 */	srw r10, r4, r8
+/* 801F7548 001F2748  7C 63 53 78 */	or r3, r3, r10
+/* 801F754C 001F274C  7C 8A 48 30 */	slw r10, r4, r9
+/* 801F7550 001F2750  7C 63 53 78 */	or r3, r3, r10
+/* 801F7554 001F2754  7C 84 38 30 */	slw r4, r4, r7
+/* 801F7558 001F2758  7C C7 30 50 */	subf r6, r7, r6
+/* 801F755C 001F275C  54 87 05 7E */	clrlwi r7, r4, 21
+/* 801F7560 001F2760  2C 07 04 00 */	cmpwi r7, 0x400
+/* 801F7564 001F2764  38 C6 04 3E */	addi r6, r6, 0x43e
+/* 801F7568 001F2768  41 80 00 1C */	blt .L_801F7584
+/* 801F756C 001F276C  41 81 00 0C */	bgt .L_801F7578
+/* 801F7570 001F2770  54 87 05 29 */	rlwinm. r7, r4, 0, 20, 20
+/* 801F7574 001F2774  41 82 00 10 */	beq .L_801F7584
+.L_801F7578:
+/* 801F7578 001F2778  30 84 08 00 */	addic r4, r4, 0x800
+/* 801F757C 001F277C  7C 63 01 94 */	addze r3, r3
+/* 801F7580 001F2780  7C C6 01 94 */	addze r6, r6
+.L_801F7584:
+/* 801F7584 001F2784  54 84 A8 3E */	rotrwi r4, r4, 11
+/* 801F7588 001F2788  50 64 A8 14 */	rlwimi r4, r3, 21, 0, 10
+/* 801F758C 001F278C  54 63 AB 3E */	extrwi r3, r3, 20, 1
+/* 801F7590 001F2790  54 C6 A0 16 */	slwi r6, r6, 20
+/* 801F7594 001F2794  7C C3 1B 78 */	or r3, r6, r3
+.L_801F7598:
+/* 801F7598 001F2798  90 61 00 08 */	stw r3, 0x8(r1)
+/* 801F759C 001F279C  90 81 00 0C */	stw r4, 0xc(r1)
+/* 801F75A0 001F27A0  C8 21 00 08 */	lfd f1, 0x8(r1)
+/* 801F75A4 001F27A4  FC 20 08 18 */	frsp f1, f1
+/* 801F75A8 001F27A8  38 21 00 10 */	addi r1, r1, 0x10
+/* 801F75AC 001F27AC  4E 80 00 20 */	blr
+.endfn fn_801F7510
+
+# .text:0x910 | 0x801F75B0 | size: 0xA8
+.fn fn_801F75B0, global
+/* 801F75B0 001F27B0  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 801F75B4 001F27B4  D8 21 00 08 */	stfd f1, 0x8(r1)
+/* 801F75B8 001F27B8  80 61 00 08 */	lwz r3, 0x8(r1)
+/* 801F75BC 001F27BC  80 81 00 0C */	lwz r4, 0xc(r1)
+/* 801F75C0 001F27C0  54 65 65 7E */	extrwi r5, r3, 11, 1
+/* 801F75C4 001F27C4  28 05 03 FF */	cmplwi r5, 0x3ff
+/* 801F75C8 001F27C8  40 80 00 10 */	bge .L_801F75D8
+.L_801F75CC:
+/* 801F75CC 001F27CC  38 60 00 00 */	li r3, 0x0
+/* 801F75D0 001F27D0  38 80 00 00 */	li r4, 0x0
+/* 801F75D4 001F27D4  48 00 00 7C */	b .L_801F7650
+.L_801F75D8:
+/* 801F75D8 001F27D8  54 66 00 01 */	clrrwi. r6, r3, 31
+/* 801F75DC 001F27DC  40 82 FF F0 */	bne .L_801F75CC
+/* 801F75E0 001F27E0  54 63 03 3E */	clrlwi r3, r3, 12
+/* 801F75E4 001F27E4  64 63 00 10 */	oris r3, r3, 0x10
+/* 801F75E8 001F27E8  38 A5 FB CD */	subi r5, r5, 0x433
+/* 801F75EC 001F27EC  2C 05 00 00 */	cmpwi r5, 0x0
+/* 801F75F0 001F27F0  40 80 00 2C */	bge .L_801F761C
+/* 801F75F4 001F27F4  7C A5 00 D0 */	neg r5, r5
+/* 801F75F8 001F27F8  21 05 00 20 */	subfic r8, r5, 0x20
+/* 801F75FC 001F27FC  31 25 FF E0 */	subic r9, r5, 0x20
+/* 801F7600 001F2800  7C 84 2C 30 */	srw r4, r4, r5
+/* 801F7604 001F2804  7C 6A 40 30 */	slw r10, r3, r8
+/* 801F7608 001F2808  7C 84 53 78 */	or r4, r4, r10
+/* 801F760C 001F280C  7C 6A 4C 30 */	srw r10, r3, r9
+/* 801F7610 001F2810  7C 84 53 78 */	or r4, r4, r10
+/* 801F7614 001F2814  7C 63 2C 30 */	srw r3, r3, r5
+/* 801F7618 001F2818  48 00 00 38 */	b .L_801F7650
+.L_801F761C:
+/* 801F761C 001F281C  2C 05 00 0B */	cmpwi r5, 0xb
+/* 801F7620 001F2820  40 A1 00 10 */	ble+ .L_801F7630
+/* 801F7624 001F2824  38 60 FF FF */	li r3, -0x1
+/* 801F7628 001F2828  38 80 FF FF */	li r4, -0x1
+/* 801F762C 001F282C  48 00 00 24 */	b .L_801F7650
+.L_801F7630:
+/* 801F7630 001F2830  21 05 00 20 */	subfic r8, r5, 0x20
+/* 801F7634 001F2834  31 25 FF E0 */	subic r9, r5, 0x20
+/* 801F7638 001F2838  7C 63 28 30 */	slw r3, r3, r5
+/* 801F763C 001F283C  7C 8A 44 30 */	srw r10, r4, r8
+/* 801F7640 001F2840  7C 63 53 78 */	or r3, r3, r10
+/* 801F7644 001F2844  7C 8A 48 30 */	slw r10, r4, r9
+/* 801F7648 001F2848  7C 63 53 78 */	or r3, r3, r10
+/* 801F764C 001F284C  7C 84 28 30 */	slw r4, r4, r5
+.L_801F7650:
+/* 801F7650 001F2850  38 21 00 10 */	addi r1, r1, 0x10
+/* 801F7654 001F2854  4E 80 00 20 */	blr
+.endfn fn_801F75B0

@@ -1,0 +1,626 @@
+ninja_required_version = 1.3
+
+# The arguments passed to configure.py, for rerunning it.
+configure_args = 
+python = "C:\Users\rieng\AppData\Local\Programs\Python\Python313\python.exe"
+
+# Variables
+ldflags = -fp hardware -nodefaults
+mw_version = Wii\1.7
+objdiff_report_args = 
+
+# Tooling
+rule download_tool
+  command = $python tools\download_tool.py $tool $out --tag $tag
+  description = TOOL $out
+rule decompctx
+  command = $python tools\decompctx.py $in -o $out -d $out.d $includes
+  description = CTX $in
+  depfile = $out.d
+  deps = gcc
+build build\tools\dtk.exe: download_tool | tools\download_tool.py
+  tool = dtk
+  tag = v1.6.1
+build build\tools\objdiff-cli.exe: download_tool | tools\download_tool.py
+  tool = objdiff-cli
+  tag = v3.0.0-beta.8
+build build\tools\sjiswrap.exe: download_tool | tools\download_tool.py
+  tool = sjiswrap
+  tag = v1.2.1
+build build\compilers: download_tool | tools\download_tool.py
+  tool = compilers
+  tag = 20250520
+build build\binutils: download_tool | tools\download_tool.py
+  tool = binutils
+  tag = 2.42-1
+
+# Download all tools
+build tools: phony build\tools\dtk.exe build\tools\sjiswrap.exe $
+    build\compilers build\binutils build\tools\objdiff-cli.exe
+
+# Link ELF file
+rule link
+  command = build\compilers\$mw_version\mwldeppc.exe $ldflags -o $out $
+      @$out.rsp
+  description = LINK $out
+  rspfile = $out.rsp
+  rspfile_content = $in_newline
+
+# Generate DOL
+rule elf2dol
+  command = build\tools\dtk.exe elf2dol $in $out
+  description = DOL $out
+
+# MWCC build
+rule mwcc
+  command = build\compilers\$mw_version\mwcceppc.exe $cflags -MMD -c $in -o $
+      $basedir
+  description = MWCC $out
+  depfile = $basefile.d
+  deps = gcc
+
+# MWCC build (with UTF-8 to Shift JIS wrapper)
+rule mwcc_sjis
+  command = build\tools\sjiswrap.exe $
+      build\compilers\$mw_version\mwcceppc.exe $cflags -MMD -c $in -o $basedir
+  description = MWCC $out
+  depfile = $basefile.d
+  deps = gcc
+
+# MWCC build (with extab post-processing)
+rule mwcc_extab
+  command = cmd /c build\compilers\$mw_version\mwcceppc.exe $cflags -MMD -c $
+      $in -o $basedir && build\tools\dtk.exe extab clean --padding $
+      "$extab_padding" $out $out
+  description = MWCC $out
+  depfile = $basefile.d
+  deps = gcc
+
+# MWCC build (with UTF-8 to Shift JIS wrapper and extab post-processing)
+rule mwcc_sjis_extab
+  command = cmd /c build\tools\sjiswrap.exe $
+      build\compilers\$mw_version\mwcceppc.exe $cflags -MMD -c $in -o $
+      $basedir && build\tools\dtk.exe extab clean --padding $
+      "$extab_padding" $out $out
+  description = MWCC $out
+  depfile = $basefile.d
+  deps = gcc
+# Assemble asm
+rule as
+  command = cmd /c build\binutils\powerpc-eabi-as.exe $asflags -o $out $in $
+      && build\tools\dtk.exe elf fixup $out $out
+  description = AS $out
+
+build pre-compile: phony
+# Source files
+
+build post-compile: phony || pre-compile
+# Link main
+build build\SQME52\main.elf: link build\SQME52\obj\auto_12_806ADDC0_sbss2.o $
+    build\SQME52\obj\auto_11_806AB420_sdata2.o $
+    build\SQME52\obj\auto_10_806AA940_sbss.o $
+    build\SQME52\obj\auto_10_806AAF50_sbss.o $
+    build\SQME52\obj\auto_09_806AA400_sdata.o $
+    build\SQME52\obj\auto_08_80582FC0_bss.o $
+    build\SQME52\obj\auto_07_802F8280_data.o $
+    build\SQME52\obj\auto_07_8055EBB0_data.o $
+    build\SQME52\obj\auto_07_80568C68_data.o $
+    build\SQME52\obj\auto_06_802F0BE0_rodata.o $
+    build\SQME52\obj\auto_03_80007640_text.o $
+    build\SQME52\obj\auto_fn_8001A1F4_text.o $
+    build\SQME52\obj\auto_03_8001A278_text.o $
+    build\SQME52\obj\auto_fn_80020688_text.o $
+    build\SQME52\obj\auto_03_8002070C_text.o $
+    build\SQME52\obj\auto_fn_800424D4_text.o $
+    build\SQME52\obj\auto_03_800424E0_text.o $
+    build\SQME52\obj\auto_fn_80048B34_text.o $
+    build\SQME52\obj\auto_03_80048BB8_text.o $
+    build\SQME52\obj\auto_fn_80053144_text.o $
+    build\SQME52\obj\auto_03_80053270_text.o $
+    build\SQME52\obj\auto_fn_800546D4_text.o $
+    build\SQME52\obj\auto_03_80054758_text.o $
+    build\SQME52\obj\auto_fn_8005A838_text.o $
+    build\SQME52\obj\auto_03_8005A910_text.o $
+    build\SQME52\obj\auto_fn_8005E4E4_text.o $
+    build\SQME52\obj\auto_03_8005E568_text.o $
+    build\SQME52\obj\auto_fn_80063968_text.o $
+    build\SQME52\obj\auto_03_80063AE0_text.o $
+    build\SQME52\obj\auto_fn_800653E0_text.o $
+    build\SQME52\obj\auto_03_80065464_text.o $
+    build\SQME52\obj\auto_fn_800659FC_text.o $
+    build\SQME52\obj\auto_03_80065B48_text.o $
+    build\SQME52\obj\auto_fn_800672A0_text.o $
+    build\SQME52\obj\auto_03_80067324_text.o $
+    build\SQME52\obj\auto_fn_8006B364_text.o $
+    build\SQME52\obj\auto_03_8006B3E8_text.o $
+    build\SQME52\obj\auto_fn_8006FC5C_text.o $
+    build\SQME52\obj\auto_03_8006FCE0_text.o $
+    build\SQME52\obj\auto_fn_80071060_text.o $
+    build\SQME52\obj\auto_03_800710E4_text.o $
+    build\SQME52\obj\auto_fn_800719B0_text.o $
+    build\SQME52\obj\auto_03_80071A34_text.o $
+    build\SQME52\obj\auto_fn_8007244C_text.o $
+    build\SQME52\obj\auto_03_800724D0_text.o $
+    build\SQME52\obj\auto_fn_80074BA4_text.o $
+    build\SQME52\obj\auto_03_80074CD0_text.o $
+    build\SQME52\obj\auto_fn_8007540C_text.o $
+    build\SQME52\obj\auto_03_80075490_text.o $
+    build\SQME52\obj\auto_fn_80077FC4_text.o $
+    build\SQME52\obj\auto_03_80078048_text.o $
+    build\SQME52\obj\auto_fn_80079614_text.o $
+    build\SQME52\obj\auto_03_80079698_text.o $
+    build\SQME52\obj\auto_fn_8007A9FC_text.o $
+    build\SQME52\obj\auto_03_8007AA80_text.o $
+    build\SQME52\obj\auto_fn_8007C3A4_text.o $
+    build\SQME52\obj\auto_03_8007C47C_text.o $
+    build\SQME52\obj\auto_fn_8007F07C_text.o $
+    build\SQME52\obj\auto_03_8007F10C_text.o $
+    build\SQME52\obj\auto_fn_8008021C_text.o $
+    build\SQME52\obj\auto_03_800802A0_text.o $
+    build\SQME52\obj\auto_fn_8008138C_text.o $
+    build\SQME52\obj\auto_03_80081410_text.o $
+    build\SQME52\obj\auto_fn_800853C4_text.o $
+    build\SQME52\obj\auto_03_800853F8_text.o $
+    build\SQME52\obj\auto_fn_80088F38_text.o $
+    build\SQME52\obj\auto_03_80089044_text.o $
+    build\SQME52\obj\auto_fn_80089C78_text.o $
+    build\SQME52\obj\auto_03_80089CFC_text.o $
+    build\SQME52\obj\auto_fn_8008C780_text.o $
+    build\SQME52\obj\auto_03_8008C804_text.o $
+    build\SQME52\obj\auto_fn_800950F4_text.o $
+    build\SQME52\obj\auto_03_80095218_text.o $
+    build\SQME52\obj\auto_fn_800A85B8_text.o $
+    build\SQME52\obj\auto_03_800A8690_text.o $
+    build\SQME52\obj\auto_fn_800AD320_text.o $
+    build\SQME52\obj\auto_03_800AD3A4_text.o $
+    build\SQME52\obj\auto_fn_800B38D4_text.o $
+    build\SQME52\obj\auto_03_800B3958_text.o $
+    build\SQME52\obj\auto_fn_800B73A0_text.o $
+    build\SQME52\obj\auto_03_800B73D8_text.o $
+    build\SQME52\obj\auto_fn_801103C4_text.o $
+    build\SQME52\obj\auto_03_8011049C_text.o $
+    build\SQME52\obj\auto_fn_80111CC0_text.o $
+    build\SQME52\obj\auto_03_80111D24_text.o $
+    build\SQME52\obj\auto_fn_80114654_text.o $
+    build\SQME52\obj\auto_03_801146D8_text.o $
+    build\SQME52\obj\auto_fn_80119524_text.o $
+    build\SQME52\obj\auto_03_801195FC_text.o $
+    build\SQME52\obj\auto_fn_8011D934_text.o $
+    build\SQME52\obj\auto_03_8011DA0C_text.o $
+    build\SQME52\obj\auto_fn_8011F5D4_text.o $
+    build\SQME52\obj\auto_03_8011F69C_text.o $
+    build\SQME52\obj\auto_fn_8013325C_text.o $
+    build\SQME52\obj\auto_03_801332E0_text.o $
+    build\SQME52\obj\auto_fn_8013ACD0_text.o $
+    build\SQME52\obj\auto_03_8013AD98_text.o $
+    build\SQME52\obj\auto_fn_80145EA0_text.o $
+    build\SQME52\obj\auto_03_80145F6C_text.o $
+    build\SQME52\obj\auto_fn_8014BA9C_text.o $
+    build\SQME52\obj\auto_03_8014BB20_text.o $
+    build\SQME52\obj\auto_fn_8014CD54_text.o $
+    build\SQME52\obj\auto_03_8014CDD8_text.o $
+    build\SQME52\obj\auto_fn_8014DAC8_text.o $
+    build\SQME52\obj\auto_03_8014DB4C_text.o $
+    build\SQME52\obj\auto_fn_8014E94C_text.o $
+    build\SQME52\obj\auto_03_8014E9D0_text.o $
+    build\SQME52\obj\auto_fn_801584BC_text.o $
+    build\SQME52\obj\auto_03_80158540_text.o $
+    build\SQME52\obj\auto_fn_8015ED6C_text.o $
+    build\SQME52\obj\auto_03_8015EDF0_text.o $
+    build\SQME52\obj\auto_fn_80163AC0_text.o $
+    build\SQME52\obj\auto_03_80163B44_text.o $
+    build\SQME52\obj\auto_fn_8016817C_text.o $
+    build\SQME52\obj\auto_03_80168200_text.o $
+    build\SQME52\obj\auto_fn_8016A904_text.o $
+    build\SQME52\obj\auto_03_8016A988_text.o $
+    build\SQME52\obj\auto_fn_8017FB24_text.o $
+    build\SQME52\obj\auto_03_8017FBA8_text.o $
+    build\SQME52\obj\auto_fn_80191204_text.o $
+    build\SQME52\obj\auto_03_80191288_text.o $
+    build\SQME52\obj\auto_fn_801923BC_text.o $
+    build\SQME52\obj\auto_03_80192440_text.o $
+    build\SQME52\obj\auto_fn_801971F8_text.o $
+    build\SQME52\obj\auto_03_8019727C_text.o $
+    build\SQME52\obj\auto_fn_8019D928_text.o $
+    build\SQME52\obj\auto_03_8019D934_text.o $
+    build\SQME52\obj\auto_fn_8019FAC0_text.o $
+    build\SQME52\obj\auto_03_8019FB44_text.o $
+    build\SQME52\obj\auto_fn_801A0324_text.o $
+    build\SQME52\obj\auto_03_801A03A8_text.o $
+    build\SQME52\obj\auto_fn_801A110C_text.o $
+    build\SQME52\obj\auto_03_801A1190_text.o $
+    build\SQME52\obj\auto_fn_801A1D50_text.o $
+    build\SQME52\obj\auto_03_801A1DD4_text.o $
+    build\SQME52\obj\auto_fn_801A2688_text.o $
+    build\SQME52\obj\auto_03_801A270C_text.o $
+    build\SQME52\obj\auto_fn_801AEEEC_text.o $
+    build\SQME52\obj\auto_03_801AEF70_text.o $
+    build\SQME52\obj\auto_fn_801B59E8_text.o $
+    build\SQME52\obj\auto_03_801B5A6C_text.o $
+    build\SQME52\obj\auto_fn_801B7530_text.o $
+    build\SQME52\obj\auto_03_801B75B4_text.o $
+    build\SQME52\obj\auto_fn_801B9B18_text.o $
+    build\SQME52\obj\auto_03_801B9BF0_text.o $
+    build\SQME52\obj\auto_fn_801BFD1C_text.o $
+    build\SQME52\obj\auto_03_801BFDE4_text.o $
+    build\SQME52\obj\auto_fn_801C3554_text.o $
+    build\SQME52\obj\auto_03_801C35D8_text.o $
+    build\SQME52\obj\auto_fn_801C495C_text.o $
+    build\SQME52\obj\auto_03_801C49E0_text.o $
+    build\SQME52\obj\auto_fn_801D2BAC_text.o $
+    build\SQME52\obj\auto_03_801D2D48_text.o $
+    build\SQME52\obj\auto_fn_801D451C_text.o $
+    build\SQME52\obj\auto_03_801D45C8_text.o $
+    build\SQME52\obj\auto_fn_801D5C48_text.o $
+    build\SQME52\obj\auto_03_801D5CCC_text.o $
+    build\SQME52\obj\auto_fn_801D7668_text.o $
+    build\SQME52\obj\auto_03_801D7768_text.o $
+    build\SQME52\obj\auto_fn_801DC38C_text.o $
+    build\SQME52\obj\auto_03_801DC410_text.o $
+    build\SQME52\obj\auto_fn_801E1618_text.o $
+    build\SQME52\obj\auto_03_801E169C_text.o $
+    build\SQME52\obj\auto_fn_801E381C_text.o $
+    build\SQME52\obj\auto_03_801E38A0_text.o $
+    build\SQME52\obj\auto_fn_801E4220_text.o $
+    build\SQME52\obj\auto_03_801E42A4_text.o $
+    build\SQME52\obj\auto_fn_801E6564_text.o $
+    build\SQME52\obj\auto_03_801E65E8_text.o $
+    build\SQME52\obj\auto_fn_801E92B8_text.o $
+    build\SQME52\obj\auto_03_801E933C_text.o $
+    build\SQME52\obj\auto_fn_801ECE78_text.o $
+    build\SQME52\obj\auto_03_801ECEFC_text.o $
+    build\SQME52\obj\auto_fn_801EF4F8_text.o $
+    build\SQME52\obj\auto_03_801EF57C_text.o $
+    build\SQME52\obj\auto_fn_801F68F0_text.o $
+    build\SQME52\obj\auto_fn_801F69F4_text.o $
+    build\SQME52\obj\auto_fn_801F6AB0_text.o $
+    build\SQME52\obj\auto_fn_801F6BA8_text.o $
+    build\SQME52\obj\auto_fn_801F6C20_text.o $
+    build\SQME52\obj\auto_03_801F6CA0_text.o $
+    build\SQME52\obj\Runtime.PPCEABI.H\__init_cpp_exceptions.o $
+    build\SQME52\obj\auto_09_806AA448_sdata.o $
+    build\SQME52\obj\auto_03_801F76C8_text.o $
+    build\SQME52\obj\auto_fn_802715E0_text.o $
+    build\SQME52\obj\auto_03_802715F4_text.o $
+    build\SQME52\obj\auto_fn_802778B0_text.o $
+    build\SQME52\obj\auto_03_802778C0_text.o $
+    build\SQME52\obj\auto_fn_80277E00_text.o $
+    build\SQME52\obj\auto_03_80277E14_text.o $
+    build\SQME52\obj\auto_fn_80279250_text.o $
+    build\SQME52\obj\auto_03_80279264_text.o $
+    build\SQME52\obj\auto_fn_8027B880_text.o $
+    build\SQME52\obj\auto_03_8027B894_text.o $
+    build\SQME52\obj\auto_fn_80284180_text.o $
+    build\SQME52\obj\auto_03_80284224_text.o $
+    build\SQME52\obj\auto_fn_8028927C_text.o $
+    build\SQME52\obj\auto_03_802892C0_text.o $
+    build\SQME52\obj\auto_fn_802892D8_text.o $
+    build\SQME52\obj\auto_fn_80289344_text.o $
+    build\SQME52\obj\auto_fn_802895AC_text.o $
+    build\SQME52\obj\auto_03_80289864_text.o $
+    build\SQME52\obj\auto_fn_80289878_text.o $
+    build\SQME52\obj\auto_fn_80289B54_text.o $
+    build\SQME52\obj\auto_03_80289C04_text.o $
+    build\SQME52\obj\auto_fn_80289C24_text.o $
+    build\SQME52\obj\auto_fn_80289C68_text.o $
+    build\SQME52\obj\auto_03_80289CDC_text.o $
+    build\SQME52\obj\auto_fn_80289D0C_text.o $
+    build\SQME52\obj\auto_03_80289DD4_text.o $
+    build\SQME52\obj\auto_fn_80289E64_text.o $
+    build\SQME52\obj\auto_fn_8028A008_text.o $
+    build\SQME52\obj\auto_fn_8028A23C_text.o $
+    build\SQME52\obj\auto_03_8028A3D8_text.o $
+    build\SQME52\obj\auto_fn_8028A488_text.o $
+    build\SQME52\obj\auto_fn_8028A5E0_text.o $
+    build\SQME52\obj\auto_fn_8028A688_text.o $
+    build\SQME52\obj\auto_fn_8028A7D0_text.o $
+    build\SQME52\obj\auto_fn_8028A918_text.o $
+    build\SQME52\obj\auto_fn_8028A9C8_text.o $
+    build\SQME52\obj\auto_fn_8028ABF4_text.o $
+    build\SQME52\obj\auto_fn_8028AE20_text.o $
+    build\SQME52\obj\auto_fn_8028AEB8_text.o $
+    build\SQME52\obj\auto_fn_8028B054_text.o $
+    build\SQME52\obj\auto_fn_8028B0EC_text.o $
+    build\SQME52\obj\auto_fn_8028B288_text.o $
+    build\SQME52\obj\auto_fn_8028B2F0_text.o $
+    build\SQME52\obj\auto_fn_8028B6FC_text.o $
+    build\SQME52\obj\auto_fn_8028BA60_text.o $
+    build\SQME52\obj\auto_fn_8028BC58_text.o $
+    build\SQME52\obj\auto_fn_8028C6A8_text.o $
+    build\SQME52\obj\auto_fn_8028C7A0_text.o $
+    build\SQME52\obj\auto_fn_8028C9BC_text.o $
+    build\SQME52\obj\auto_fn_8028CA80_text.o $
+    build\SQME52\obj\auto_fn_8028CB74_text.o $
+    build\SQME52\obj\auto_fn_8028CD84_text.o $
+    build\SQME52\obj\auto_fn_8028CF80_text.o $
+    build\SQME52\obj\auto_03_8028D02C_text.o $
+    build\SQME52\obj\auto_fn_8028D04C_text.o $
+    build\SQME52\obj\auto_fn_8028D0B8_text.o $
+    build\SQME52\obj\auto_03_8028D1D4_text.o $
+    build\SQME52\obj\auto_fn_8028D24C_text.o $
+    build\SQME52\obj\auto_fn_8028D404_text.o $
+    build\SQME52\obj\auto_fn_8028D4DC_text.o $
+    build\SQME52\obj\auto_fn_8028D588_text.o $
+    build\SQME52\obj\auto_03_8028D678_text.o $
+    build\SQME52\obj\auto_fn_8028D6FC_text.o $
+    build\SQME52\obj\auto_fn_8028D820_text.o $
+    build\SQME52\obj\auto_fn_8028D8F4_text.o $
+    build\SQME52\obj\auto_fn_8028DBF0_text.o $
+    build\SQME52\obj\auto_fn_8028DD64_text.o $
+    build\SQME52\obj\auto_fn_8028DE98_text.o $
+    build\SQME52\obj\auto_fn_8028E2FC_text.o $
+    build\SQME52\obj\auto_03_8028E4D8_text.o $
+    build\SQME52\obj\auto_fn_8028E4E8_text.o $
+    build\SQME52\obj\auto_fn_8028E924_text.o $
+    build\SQME52\obj\auto_fn_8028E968_text.o $
+    build\SQME52\obj\auto_03_8028E98C_text.o $
+    build\SQME52\obj\auto_fn_8028E9D4_text.o $
+    build\SQME52\obj\auto_fn_8028EA1C_text.o $
+    build\SQME52\obj\auto_03_8028EA64_text.o $
+    build\SQME52\obj\auto_fn_8028EA88_text.o $
+    build\SQME52\obj\auto_fn_8028EAD0_text.o $
+    build\SQME52\obj\auto_03_8028EB18_text.o $
+    build\SQME52\obj\auto_fn_8028EB3C_text.o $
+    build\SQME52\obj\auto_03_8028EB84_text.o $
+    build\SQME52\obj\auto_fn_8028EBF0_text.o $
+    build\SQME52\obj\auto_fn_8028EC38_text.o $
+    build\SQME52\obj\auto_fn_8028EC88_text.o $
+    build\SQME52\obj\auto_fn_8028ECD0_text.o $
+    build\SQME52\obj\auto_03_8028ED18_text.o $
+    build\SQME52\obj\auto_fn_8028ED98_text.o $
+    build\SQME52\obj\auto_fn_8028EDE4_text.o $
+    build\SQME52\obj\auto_fn_8028EF18_text.o $
+    build\SQME52\obj\auto_fn_8028EFBC_text.o $
+    build\SQME52\obj\auto_fn_8028F054_text.o $
+    build\SQME52\obj\auto_fn_8028F2A4_text.o $
+    build\SQME52\obj\auto_fn_8028F358_text.o $
+    build\SQME52\obj\auto_fn_8028F464_text.o $
+    build\SQME52\obj\auto_fn_8028F4D8_text.o $
+    build\SQME52\obj\auto_fn_8028F574_text.o $
+    build\SQME52\obj\auto_fn_8028F604_text.o $
+    build\SQME52\obj\auto_fn_8028F744_text.o $
+    build\SQME52\obj\auto_fn_8028F9EC_text.o $
+    build\SQME52\obj\auto_fn_8028FAE4_text.o $
+    build\SQME52\obj\auto_fn_8028FBB8_text.o $
+    build\SQME52\obj\auto_03_8028FC54_text.o $
+    build\SQME52\obj\auto_fn_8028FCB4_text.o $
+    build\SQME52\obj\auto_fn_8028FEB8_text.o $
+    build\SQME52\obj\auto_fn_802900CC_text.o $
+    build\SQME52\obj\auto_fn_802901D4_text.o $
+    build\SQME52\obj\auto_fn_802902C8_text.o $
+    build\SQME52\obj\auto_fn_80290384_text.o $
+    build\SQME52\obj\auto_fn_802903E8_text.o $
+    build\SQME52\obj\auto_fn_802906E0_text.o $
+    build\SQME52\obj\auto_fn_802908D8_text.o $
+    build\SQME52\obj\auto_fn_802909D4_text.o $
+    build\SQME52\obj\auto_fn_80290A98_text.o $
+    build\SQME52\obj\auto_fn_80290DB4_text.o $
+    build\SQME52\obj\auto_fn_80290E1C_text.o $
+    build\SQME52\obj\auto_fn_802913D0_text.o $
+    build\SQME52\obj\auto_fn_80291410_text.o $
+    build\SQME52\obj\auto_fn_80291504_text.o $
+    build\SQME52\obj\auto_fn_80291588_text.o $
+    build\SQME52\obj\auto_fn_802915DC_text.o $
+    build\SQME52\obj\auto_03_8029161C_text.o $
+    build\SQME52\obj\auto_fn_8029162C_text.o $
+    build\SQME52\obj\auto_fn_8029166C_text.o $
+    build\SQME52\obj\auto_fn_80291784_text.o $
+    build\SQME52\obj\auto_fn_802917C4_text.o $
+    build\SQME52\obj\auto_fn_80291980_text.o $
+    build\SQME52\obj\auto_fn_802919FC_text.o $
+    build\SQME52\obj\auto_fn_80291A30_text.o $
+    build\SQME52\obj\auto_fn_80291B14_text.o $
+    build\SQME52\obj\auto_fn_80291E74_text.o $
+    build\SQME52\obj\auto_fn_8029207C_text.o $
+    build\SQME52\obj\auto_fn_802921CC_text.o $
+    build\SQME52\obj\auto_fn_802922FC_text.o $
+    build\SQME52\obj\auto_fn_802924F4_text.o $
+    build\SQME52\obj\auto_fn_802925F8_text.o $
+    build\SQME52\obj\auto_fn_8029269C_text.o $
+    build\SQME52\obj\auto_fn_8029273C_text.o $
+    build\SQME52\obj\auto_fn_802928C4_text.o $
+    build\SQME52\obj\auto_fn_80292AD4_text.o $
+    build\SQME52\obj\auto_fn_80292C5C_text.o $
+    build\SQME52\obj\auto_fn_80292FF4_text.o $
+    build\SQME52\obj\auto_fn_8029332C_text.o $
+    build\SQME52\obj\auto_fn_802933FC_text.o $
+    build\SQME52\obj\auto_fn_802934C8_text.o $
+    build\SQME52\obj\auto_fn_802938B8_text.o $
+    build\SQME52\obj\auto_fn_80293A40_text.o $
+    build\SQME52\obj\auto_fn_80293B34_text.o $
+    build\SQME52\obj\auto_fn_80293BC0_text.o $
+    build\SQME52\obj\auto_fn_80293D60_text.o $
+    build\SQME52\obj\auto_fn_80293DA0_text.o $
+    build\SQME52\obj\auto_fn_80293EE8_text.o $
+    build\SQME52\obj\auto_fn_80293F28_text.o $
+    build\SQME52\obj\auto_fn_80293FC4_text.o $
+    build\SQME52\obj\auto_fn_802940B0_text.o $
+    build\SQME52\obj\auto_03_8029421C_text.o $
+    build\SQME52\obj\auto_fn_80294314_text.o $
+    build\SQME52\obj\auto_fn_80294408_text.o $
+    build\SQME52\obj\auto_03_8029448C_text.o $
+    build\SQME52\obj\auto_fn_802944C4_text.o $
+    build\SQME52\obj\auto_fn_80294598_text.o $
+    build\SQME52\obj\auto_03_80294660_text.o $
+    build\SQME52\obj\auto_fn_80294690_text.o $
+    build\SQME52\obj\auto_03_80294838_text.o $
+    build\SQME52\obj\auto_fn_80294920_text.o $
+    build\SQME52\obj\auto_fn_802949D0_text.o $
+    build\SQME52\obj\auto_fn_80294B74_text.o $
+    build\SQME52\obj\auto_fn_80294C88_text.o $
+    build\SQME52\obj\auto_fn_80294ED8_text.o $
+    build\SQME52\obj\auto_03_80294FCC_text.o $
+    build\SQME52\obj\auto_fn_80294FF0_text.o $
+    build\SQME52\obj\auto_03_80295160_text.o $
+    build\SQME52\obj\auto_fn_802951B8_text.o $
+    build\SQME52\obj\auto_03_802951DC_text.o $
+    build\SQME52\obj\auto_fn_80295240_text.o $
+    build\SQME52\obj\auto_fn_80295288_text.o $
+    build\SQME52\obj\auto_03_802952D0_text.o $
+    build\SQME52\obj\auto_fn_802952F4_text.o $
+    build\SQME52\obj\auto_fn_8029533C_text.o $
+    build\SQME52\obj\auto_03_80295384_text.o $
+    build\SQME52\obj\auto_fn_802953A8_text.o $
+    build\SQME52\obj\auto_03_802953F0_text.o $
+    build\SQME52\obj\auto_fn_8029545C_text.o $
+    build\SQME52\obj\auto_fn_802954A4_text.o $
+    build\SQME52\obj\auto_fn_802954F4_text.o $
+    build\SQME52\obj\auto_fn_8029553C_text.o $
+    build\SQME52\obj\auto_03_80295584_text.o $
+    build\SQME52\obj\auto_fn_80295670_text.o $
+    build\SQME52\obj\auto_03_80295720_text.o $
+    build\SQME52\obj\auto_fn_80295748_text.o $
+    build\SQME52\obj\auto_fn_80295804_text.o $
+    build\SQME52\obj\auto_fn_8029583C_text.o $
+    build\SQME52\obj\auto_fn_80295994_text.o $
+    build\SQME52\obj\auto_fn_80295D7C_text.o $
+    build\SQME52\obj\auto_fn_80295E78_text.o $
+    build\SQME52\obj\auto_03_80295FA4_text.o $
+    build\SQME52\obj\auto_fn_80295FA8_text.o $
+    build\SQME52\obj\auto_fn_80296098_text.o $
+    build\SQME52\obj\auto_03_80296428_text.o $
+    build\SQME52\obj\auto_fn_802966B4_text.o $
+    build\SQME52\obj\auto_03_8029679C_text.o $
+    build\SQME52\obj\auto_fn_802967D8_text.o $
+    build\SQME52\obj\auto_fn_80296830_text.o $
+    build\SQME52\obj\auto_fn_80296AD4_text.o $
+    build\SQME52\obj\auto_fn_80296DD4_text.o $
+    build\SQME52\obj\auto_fn_80296E30_text.o $
+    build\SQME52\obj\auto_fn_80296E8C_text.o $
+    build\SQME52\obj\auto_fn_80296FD4_text.o $
+    build\SQME52\obj\auto_fn_802970A4_text.o $
+    build\SQME52\obj\auto_03_80297270_text.o $
+    build\SQME52\obj\auto_fn_80297274_text.o $
+    build\SQME52\obj\auto_03_8029743C_text.o $
+    build\SQME52\obj\auto_fn_8029756C_text.o $
+    build\SQME52\obj\auto_03_802976F4_text.o $
+    build\SQME52\obj\auto_fn_80297710_text.o $
+    build\SQME52\obj\auto_fn_80297874_text.o $
+    build\SQME52\obj\auto_fn_80298464_text.o $
+    build\SQME52\obj\auto_fn_8029856C_text.o $
+    build\SQME52\obj\auto_fn_8029866C_text.o $
+    build\SQME52\obj\auto_03_80298734_text.o $
+    build\SQME52\obj\auto_fn_8029877C_text.o $
+    build\SQME52\obj\auto_fn_80298874_text.o $
+    build\SQME52\obj\auto_03_802988D0_text.o $
+    build\SQME52\obj\auto_fn_80298908_text.o $
+    build\SQME52\obj\auto_fn_80298A38_text.o $
+    build\SQME52\obj\auto_fn_80298CD4_text.o $
+    build\SQME52\obj\auto_03_80298D50_text.o $
+    build\SQME52\obj\auto_fn_80298D5C_text.o $
+    build\SQME52\obj\auto_03_80298EA8_text.o $
+    build\SQME52\obj\auto_fn_80298EBC_text.o $
+    build\SQME52\obj\auto_fn_80298F2C_text.o $
+    build\SQME52\obj\auto_fn_80298F54_text.o $
+    build\SQME52\obj\auto_fn_8029910C_text.o $
+    build\SQME52\obj\auto_03_802992EC_text.o $
+    build\SQME52\obj\auto_fn_802992F0_text.o $
+    build\SQME52\obj\auto_03_80299364_text.o $
+    build\SQME52\obj\auto_fn_802BA508_text.o $
+    build\SQME52\obj\auto_03_802BA550_text.o $
+    build\SQME52\obj\auto_fn_802C1E00_text.o $
+    build\SQME52\obj\auto_03_802C1E84_text.o $
+    build\SQME52\obj\auto_00_80004000_init.o | build\SQME52\ldscript.lcf $
+    build\compilers || post-compile
+  ldflags = $ldflags -lcf build\SQME52\ldscript.lcf
+
+
+build post-link: phony || post-compile
+build build\SQME52\main.dol: elf2dol build\SQME52\main.elf | $
+    build\tools\dtk.exe || post-link
+# Generate REL(s)
+rule makerel
+  command = build\tools\dtk.exe rel make -w -c $config $names @$rspfile
+  description = REL
+  rspfile = $rspfile
+  rspfile_content = $in_newline
+build post-build: phony || post-link
+# Build all source files
+build all_source: phony
+
+# Check hash
+rule check
+  command = build\tools\dtk.exe shasum  -c $in -o $out
+  description = CHECK $in
+build build\SQME52\ok: check config\SQME52\build.sha1 | build\tools\dtk.exe $
+    build\SQME52\main.dol || post-build
+
+# Calculate progress
+rule progress
+  command = $python configure.py $configure_args progress
+  description = PROGRESS
+build progress: progress | build\SQME52\ok configure.py tools\project.py $
+    build\SQME52\report.json || post-build
+# Generate progress report
+rule report
+  command = build\tools\objdiff-cli.exe report generate $
+      $objdiff_report_args -o $out
+  description = REPORT
+build build\SQME52\report.json: report | build\tools\objdiff-cli.exe $
+    objdiff.json all_source || post-build
+# Phony edge that will always be considered dirty by ninja.
+# This can be used as an implicit to a target that should always be rerun,
+# ignoring file modified times.
+build always: phony
+
+# Create a baseline progress report for later match regression testing
+build build\SQME52\baseline.json: report | build\tools\objdiff-cli.exe $
+    all_source always || post-build
+build baseline: phony build\SQME52\baseline.json
+# Check for any match regressions against the baseline
+# Will fail if no baseline has been created
+rule report_changes
+  command = build\tools\objdiff-cli.exe report changes --format json-pretty $
+      build\SQME52\baseline.json $in -o $out
+  description = CHANGES
+build build\SQME52\report_changes.json: report_changes $
+    build\SQME52\report.json | build\tools\objdiff-cli.exe always
+rule changes_fmt
+  command = $python tools\changes_fmt.py $args $in
+  description = CHANGESFMT
+build changes: changes_fmt build\SQME52\report_changes.json | $
+    tools\changes_fmt.py
+build changes_all: changes_fmt build\SQME52\report_changes.json | $
+    tools\changes_fmt.py
+  args = --all
+rule changes_md
+  command = $python tools\changes_fmt.py $in -o $out
+  description = CHANGESFMT $out
+build build\SQME52\regressions.md: changes_md $
+    build\SQME52\report_changes.json | tools\changes_fmt.py
+
+# Check for mismatching symbols
+rule dol_diff
+  command = build\tools\dtk.exe -L error dol diff $in
+  description = DIFF build\SQME52\main.elf
+build dol_diff: dol_diff config\SQME52\config.yml build\SQME52\main.elf
+build diff: phony dol_diff
+
+# Apply symbols from linked ELF
+rule dol_apply
+  command = build\tools\dtk.exe dol apply $in
+  description = APPLY build\SQME52\main.elf
+build dol_apply: dol_apply config\SQME52\config.yml build\SQME52\main.elf | $
+    build\SQME52\ok
+build apply: phony dol_apply
+
+# Split DOL into relocatable objects
+rule split
+  command = build\tools\dtk.exe dol split $in $out_dir
+  description = SPLIT $in
+  depfile = $out_dir/dep
+  deps = gcc
+build build\SQME52\config.json: split config\SQME52\config.yml | $
+    build\tools\dtk.exe
+  out_dir = build\SQME52
+
+# Reconfigure on change
+rule configure
+  command = $python configure.py $configure_args
+  description = RUN configure.py
+  generator = 1
+build build.ninja objdiff.json: configure | build\SQME52\config.json $
+    configure.py tools\project.py tools\ninja_syntax.py
+
+# Default rule
+default progress

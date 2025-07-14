@@ -1,0 +1,51 @@
+.include "macros.inc"
+.file "auto_fn_8007F07C_text"
+
+# 0x8007F07C..0x8007F10C | size: 0x90
+.text
+.balign 4
+
+# .text:0x0 | 0x8007F07C | size: 0x90
+.fn fn_8007F07C, global
+/* 8007F07C 0007A27C  94 21 FF F0 */	stwu r1, -0x10(r1)
+/* 8007F080 0007A280  7C 08 02 A6 */	mflr r0
+/* 8007F084 0007A284  3C 60 80 5E */	lis r3, lbl_805DE45C@ha
+/* 8007F088 0007A288  90 01 00 14 */	stw r0, 0x14(r1)
+/* 8007F08C 0007A28C  93 E1 00 0C */	stw r31, 0xc(r1)
+/* 8007F090 0007A290  3B E3 E4 5C */	addi r31, r3, lbl_805DE45C@l
+/* 8007F094 0007A294  93 C1 00 08 */	stw r30, 0x8(r1)
+/* 8007F098 0007A298  3B C0 00 00 */	li r30, 0x0
+/* 8007F09C 0007A29C  93 C3 E4 5C */	stw r30, lbl_805DE45C@l(r3)
+/* 8007F0A0 0007A2A0  38 7F 00 18 */	addi r3, r31, 0x18
+/* 8007F0A4 0007A2A4  93 DF 00 04 */	stw r30, 0x4(r31)
+/* 8007F0A8 0007A2A8  93 DF 00 08 */	stw r30, 0x8(r31)
+/* 8007F0AC 0007A2AC  93 DF 00 0C */	stw r30, 0xc(r31)
+/* 8007F0B0 0007A2B0  93 DF 00 10 */	stw r30, 0x10(r31)
+/* 8007F0B4 0007A2B4  93 DF 00 14 */	stw r30, 0x14(r31)
+/* 8007F0B8 0007A2B8  48 1C 02 59 */	bl fn_8023F310
+/* 8007F0BC 0007A2BC  88 1F 00 30 */	lbz r0, 0x30(r31)
+/* 8007F0C0 0007A2C0  3C 80 80 08 */	lis r4, fn_8007F10C@ha
+/* 8007F0C4 0007A2C4  3C A0 80 5E */	lis r5, lbl_805DE450@ha
+/* 8007F0C8 0007A2C8  93 DF 00 34 */	stw r30, 0x34(r31)
+/* 8007F0CC 0007A2CC  54 00 06 6E */	rlwinm r0, r0, 0, 25, 23
+/* 8007F0D0 0007A2D0  7F E3 FB 78 */	mr r3, r31
+/* 8007F0D4 0007A2D4  98 1F 00 30 */	stb r0, 0x30(r31)
+/* 8007F0D8 0007A2D8  38 84 F1 0C */	addi r4, r4, fn_8007F10C@l
+/* 8007F0DC 0007A2DC  38 A5 E4 50 */	addi r5, r5, lbl_805DE450@l
+/* 8007F0E0 0007A2E0  93 DF 00 38 */	stw r30, 0x38(r31)
+/* 8007F0E4 0007A2E4  48 17 77 AD */	bl __register_global_object
+/* 8007F0E8 0007A2E8  3C 60 80 5E */	lis r3, lbl_805DE498@ha
+/* 8007F0EC 0007A2EC  38 63 E4 98 */	addi r3, r3, lbl_805DE498@l
+/* 8007F0F0 0007A2F0  48 1C 02 21 */	bl fn_8023F310
+/* 8007F0F4 0007A2F4  80 01 00 14 */	lwz r0, 0x14(r1)
+/* 8007F0F8 0007A2F8  83 E1 00 0C */	lwz r31, 0xc(r1)
+/* 8007F0FC 0007A2FC  83 C1 00 08 */	lwz r30, 0x8(r1)
+/* 8007F100 0007A300  7C 08 03 A6 */	mtlr r0
+/* 8007F104 0007A304  38 21 00 10 */	addi r1, r1, 0x10
+/* 8007F108 0007A308  4E 80 00 20 */	blr
+.endfn fn_8007F07C
+
+# 0x802F0AA0..0x802F0AA4 | size: 0x4
+.section .ctors, "a"
+.balign 4
+	.4byte fn_8007F07C

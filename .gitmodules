@@ -1,0 +1,12 @@
+[submodule "Reference/key"]
+	path = Reference/key
+	url = https://github.com/Grien25/key.git
+[submodule "Reference/mkw"]
+	path = Reference/mkw
+	url = https://github.com/Grien25/mkw.git
+[submodule "Reference/rb3"]
+	path = Reference/rb3
+	url = https://github.com/Grien25/rb3.git
+[submodule "Reference/libogc"]
+	path = Reference/libogc
+	url = https://github.com/devkitPro/libogc.git

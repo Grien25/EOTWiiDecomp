@@ -1,30 +1,21 @@
-# IDE folders
-.idea/
-.vs/
+# Ignore build output
+build/
 
-# Caches
-__pycache__
-.mypy_cache
-.cache/
+# Ignore Ninja build files
+build.ninja
 
-# Original files
-orig/*/*
-!orig/*/.gitkeep
-*.dol
-*.rel
-*.elf
-*.o
-*.map
-*.MAP
-
-# decompctx output
-ctx.*
-*.ctx
-
-# Generated configs
-objdiff.json
+# Ignore compile commands
 compile_commands.json
 
-# Miscellaneous
-/*.txt
+# Ignore Ninja log files
+.ninja_log
+.ninja_deps
+
+# Ignore other common build artifacts
+*.bin
+*.map
 *.exe
+
+# Ignore Python cache
+__pycache__/
+*.pyc

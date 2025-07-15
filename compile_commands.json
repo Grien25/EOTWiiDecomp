@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "C:/Users/rieng/OneDrive/Documents/Github/EOTWiiDecomp",
+    "file": "C:/Users/rieng/OneDrive/Documents/Github/EOTWiiDecomp/src/Runtime.PPCEABI.H/__init_cpp_exceptions.cpp",
+    "output": "C:/Users/rieng/OneDrive/Documents/Github/EOTWiiDecomp/build/SQME52/src/Runtime.PPCEABI.H/__init_cpp_exceptions.o",
+    "arguments": [
+      "clang",
+      "-nostdinc",
+      "-fno-builtin",
+      "--target=powerpc-eabi",
+      "-fno-short-enums",
+      "-fno-cxx-exceptions",
+      "-fno-rtti",
+      "-Iinclude",
+      "-Ibuild/SQME52/include",
+      "-DBUILD_VERSION=0",
+      "-DVERSION_SQME52",
+      "-DNDEBUG=1",
+      "-fno-common",
+      "-c",
+      "C:/Users/rieng/OneDrive/Documents/Github/EOTWiiDecomp/src/Runtime.PPCEABI.H/__init_cpp_exceptions.cpp",
+      "-o",
+      "C:/Users/rieng/OneDrive/Documents/Github/EOTWiiDecomp/build/SQME52/src/Runtime.PPCEABI.H/__init_cpp_exceptions.o"
+    ]
+  }
+]

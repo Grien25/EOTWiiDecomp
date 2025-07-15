@@ -1,0 +1,3437 @@
+{
+  "min_version": "2.0.0-beta.5",
+  "custom_make": "ninja",
+  "build_target": false,
+  "watch_patterns": [
+    "*.c",
+    "*.cp",
+    "*.cpp",
+    "*.h",
+    "*.hpp",
+    "*.inc",
+    "*.py",
+    "*.yml",
+    "*.txt",
+    "*.json"
+  ],
+  "units": [
+    {
+      "name": "main/auto_12_806ADDC0_sbss2",
+      "target_path": "build/SQME52/obj/auto_12_806ADDC0_sbss2.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_11_806AB420_sdata2",
+      "target_path": "build/SQME52/obj/auto_11_806AB420_sdata2.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_10_806AA940_sbss",
+      "target_path": "build/SQME52/obj/auto_10_806AA940_sbss.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_10_806AAF50_sbss",
+      "target_path": "build/SQME52/obj/auto_10_806AAF50_sbss.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_09_806AA400_sdata",
+      "target_path": "build/SQME52/obj/auto_09_806AA400_sdata.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_08_80582FC0_bss",
+      "target_path": "build/SQME52/obj/auto_08_80582FC0_bss.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_07_802F8280_data",
+      "target_path": "build/SQME52/obj/auto_07_802F8280_data.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_07_8055EBB0_data",
+      "target_path": "build/SQME52/obj/auto_07_8055EBB0_data.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_07_80568C68_data",
+      "target_path": "build/SQME52/obj/auto_07_80568C68_data.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_06_802F0BE0_rodata",
+      "target_path": "build/SQME52/obj/auto_06_802F0BE0_rodata.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80007640_text",
+      "target_path": "build/SQME52/obj/auto_03_80007640_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8001A1F4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8001A1F4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8001A278_text",
+      "target_path": "build/SQME52/obj/auto_03_8001A278_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80020688_text",
+      "target_path": "build/SQME52/obj/auto_fn_80020688_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8002070C_text",
+      "target_path": "build/SQME52/obj/auto_03_8002070C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800424D4_text",
+      "target_path": "build/SQME52/obj/auto_fn_800424D4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_800424E0_text",
+      "target_path": "build/SQME52/obj/auto_03_800424E0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80048B34_text",
+      "target_path": "build/SQME52/obj/auto_fn_80048B34_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80048BB8_text",
+      "target_path": "build/SQME52/obj/auto_03_80048BB8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80053144_text",
+      "target_path": "build/SQME52/obj/auto_fn_80053144_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80053270_text",
+      "target_path": "build/SQME52/obj/auto_03_80053270_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800546D4_text",
+      "target_path": "build/SQME52/obj/auto_fn_800546D4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80054758_text",
+      "target_path": "build/SQME52/obj/auto_03_80054758_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8005A838_text",
+      "target_path": "build/SQME52/obj/auto_fn_8005A838_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8005A910_text",
+      "target_path": "build/SQME52/obj/auto_03_8005A910_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8005E4E4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8005E4E4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8005E568_text",
+      "target_path": "build/SQME52/obj/auto_03_8005E568_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80063968_text",
+      "target_path": "build/SQME52/obj/auto_fn_80063968_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80063AE0_text",
+      "target_path": "build/SQME52/obj/auto_03_80063AE0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800653E0_text",
+      "target_path": "build/SQME52/obj/auto_fn_800653E0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80065464_text",
+      "target_path": "build/SQME52/obj/auto_03_80065464_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800659FC_text",
+      "target_path": "build/SQME52/obj/auto_fn_800659FC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80065B48_text",
+      "target_path": "build/SQME52/obj/auto_03_80065B48_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800672A0_text",
+      "target_path": "build/SQME52/obj/auto_fn_800672A0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80067324_text",
+      "target_path": "build/SQME52/obj/auto_03_80067324_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8006B364_text",
+      "target_path": "build/SQME52/obj/auto_fn_8006B364_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8006B3E8_text",
+      "target_path": "build/SQME52/obj/auto_03_8006B3E8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8006FC5C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8006FC5C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8006FCE0_text",
+      "target_path": "build/SQME52/obj/auto_03_8006FCE0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80071060_text",
+      "target_path": "build/SQME52/obj/auto_fn_80071060_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_800710E4_text",
+      "target_path": "build/SQME52/obj/auto_03_800710E4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800719B0_text",
+      "target_path": "build/SQME52/obj/auto_fn_800719B0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80071A34_text",
+      "target_path": "build/SQME52/obj/auto_03_80071A34_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8007244C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8007244C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_800724D0_text",
+      "target_path": "build/SQME52/obj/auto_03_800724D0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80074BA4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80074BA4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80074CD0_text",
+      "target_path": "build/SQME52/obj/auto_03_80074CD0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8007540C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8007540C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80075490_text",
+      "target_path": "build/SQME52/obj/auto_03_80075490_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80077FC4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80077FC4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80078048_text",
+      "target_path": "build/SQME52/obj/auto_03_80078048_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80079614_text",
+      "target_path": "build/SQME52/obj/auto_fn_80079614_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80079698_text",
+      "target_path": "build/SQME52/obj/auto_03_80079698_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8007A9FC_text",
+      "target_path": "build/SQME52/obj/auto_fn_8007A9FC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8007AA80_text",
+      "target_path": "build/SQME52/obj/auto_03_8007AA80_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8007C3A4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8007C3A4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8007C47C_text",
+      "target_path": "build/SQME52/obj/auto_03_8007C47C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8007F07C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8007F07C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8007F10C_text",
+      "target_path": "build/SQME52/obj/auto_03_8007F10C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8008021C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8008021C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_800802A0_text",
+      "target_path": "build/SQME52/obj/auto_03_800802A0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8008138C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8008138C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80081410_text",
+      "target_path": "build/SQME52/obj/auto_03_80081410_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800853C4_text",
+      "target_path": "build/SQME52/obj/auto_fn_800853C4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_800853F8_text",
+      "target_path": "build/SQME52/obj/auto_03_800853F8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80088F38_text",
+      "target_path": "build/SQME52/obj/auto_fn_80088F38_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80089044_text",
+      "target_path": "build/SQME52/obj/auto_03_80089044_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80089C78_text",
+      "target_path": "build/SQME52/obj/auto_fn_80089C78_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80089CFC_text",
+      "target_path": "build/SQME52/obj/auto_03_80089CFC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8008C780_text",
+      "target_path": "build/SQME52/obj/auto_fn_8008C780_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8008C804_text",
+      "target_path": "build/SQME52/obj/auto_03_8008C804_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800950F4_text",
+      "target_path": "build/SQME52/obj/auto_fn_800950F4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80095218_text",
+      "target_path": "build/SQME52/obj/auto_03_80095218_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800A85B8_text",
+      "target_path": "build/SQME52/obj/auto_fn_800A85B8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_800A8690_text",
+      "target_path": "build/SQME52/obj/auto_03_800A8690_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800AD320_text",
+      "target_path": "build/SQME52/obj/auto_fn_800AD320_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_800AD3A4_text",
+      "target_path": "build/SQME52/obj/auto_03_800AD3A4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800B38D4_text",
+      "target_path": "build/SQME52/obj/auto_fn_800B38D4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_800B3958_text",
+      "target_path": "build/SQME52/obj/auto_03_800B3958_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_800B73A0_text",
+      "target_path": "build/SQME52/obj/auto_fn_800B73A0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_800B73D8_text",
+      "target_path": "build/SQME52/obj/auto_03_800B73D8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801103C4_text",
+      "target_path": "build/SQME52/obj/auto_fn_801103C4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8011049C_text",
+      "target_path": "build/SQME52/obj/auto_03_8011049C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80111CC0_text",
+      "target_path": "build/SQME52/obj/auto_fn_80111CC0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80111D24_text",
+      "target_path": "build/SQME52/obj/auto_03_80111D24_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80114654_text",
+      "target_path": "build/SQME52/obj/auto_fn_80114654_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801146D8_text",
+      "target_path": "build/SQME52/obj/auto_03_801146D8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80119524_text",
+      "target_path": "build/SQME52/obj/auto_fn_80119524_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801195FC_text",
+      "target_path": "build/SQME52/obj/auto_03_801195FC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8011D934_text",
+      "target_path": "build/SQME52/obj/auto_fn_8011D934_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8011DA0C_text",
+      "target_path": "build/SQME52/obj/auto_03_8011DA0C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8011F5D4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8011F5D4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8011F69C_text",
+      "target_path": "build/SQME52/obj/auto_03_8011F69C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8013325C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8013325C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801332E0_text",
+      "target_path": "build/SQME52/obj/auto_03_801332E0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8013ACD0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8013ACD0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8013AD98_text",
+      "target_path": "build/SQME52/obj/auto_03_8013AD98_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80145EA0_text",
+      "target_path": "build/SQME52/obj/auto_fn_80145EA0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80145F6C_text",
+      "target_path": "build/SQME52/obj/auto_03_80145F6C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8014BA9C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8014BA9C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8014BB20_text",
+      "target_path": "build/SQME52/obj/auto_03_8014BB20_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8014CD54_text",
+      "target_path": "build/SQME52/obj/auto_fn_8014CD54_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8014CDD8_text",
+      "target_path": "build/SQME52/obj/auto_03_8014CDD8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8014DAC8_text",
+      "target_path": "build/SQME52/obj/auto_fn_8014DAC8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8014DB4C_text",
+      "target_path": "build/SQME52/obj/auto_03_8014DB4C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8014E94C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8014E94C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8014E9D0_text",
+      "target_path": "build/SQME52/obj/auto_03_8014E9D0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801584BC_text",
+      "target_path": "build/SQME52/obj/auto_fn_801584BC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80158540_text",
+      "target_path": "build/SQME52/obj/auto_03_80158540_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8015ED6C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8015ED6C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8015EDF0_text",
+      "target_path": "build/SQME52/obj/auto_03_8015EDF0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80163AC0_text",
+      "target_path": "build/SQME52/obj/auto_fn_80163AC0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80163B44_text",
+      "target_path": "build/SQME52/obj/auto_03_80163B44_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8016817C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8016817C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80168200_text",
+      "target_path": "build/SQME52/obj/auto_03_80168200_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8016A904_text",
+      "target_path": "build/SQME52/obj/auto_fn_8016A904_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8016A988_text",
+      "target_path": "build/SQME52/obj/auto_03_8016A988_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8017FB24_text",
+      "target_path": "build/SQME52/obj/auto_fn_8017FB24_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8017FBA8_text",
+      "target_path": "build/SQME52/obj/auto_03_8017FBA8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80191204_text",
+      "target_path": "build/SQME52/obj/auto_fn_80191204_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80191288_text",
+      "target_path": "build/SQME52/obj/auto_03_80191288_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801923BC_text",
+      "target_path": "build/SQME52/obj/auto_fn_801923BC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80192440_text",
+      "target_path": "build/SQME52/obj/auto_03_80192440_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801971F8_text",
+      "target_path": "build/SQME52/obj/auto_fn_801971F8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8019727C_text",
+      "target_path": "build/SQME52/obj/auto_03_8019727C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8019D928_text",
+      "target_path": "build/SQME52/obj/auto_fn_8019D928_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8019D934_text",
+      "target_path": "build/SQME52/obj/auto_03_8019D934_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8019FAC0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8019FAC0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8019FB44_text",
+      "target_path": "build/SQME52/obj/auto_03_8019FB44_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801A0324_text",
+      "target_path": "build/SQME52/obj/auto_fn_801A0324_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801A03A8_text",
+      "target_path": "build/SQME52/obj/auto_03_801A03A8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801A110C_text",
+      "target_path": "build/SQME52/obj/auto_fn_801A110C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801A1190_text",
+      "target_path": "build/SQME52/obj/auto_03_801A1190_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801A1D50_text",
+      "target_path": "build/SQME52/obj/auto_fn_801A1D50_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801A1DD4_text",
+      "target_path": "build/SQME52/obj/auto_03_801A1DD4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801A2688_text",
+      "target_path": "build/SQME52/obj/auto_fn_801A2688_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801A270C_text",
+      "target_path": "build/SQME52/obj/auto_03_801A270C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801AEEEC_text",
+      "target_path": "build/SQME52/obj/auto_fn_801AEEEC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801AEF70_text",
+      "target_path": "build/SQME52/obj/auto_03_801AEF70_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801B59E8_text",
+      "target_path": "build/SQME52/obj/auto_fn_801B59E8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801B5A6C_text",
+      "target_path": "build/SQME52/obj/auto_03_801B5A6C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801B7530_text",
+      "target_path": "build/SQME52/obj/auto_fn_801B7530_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801B75B4_text",
+      "target_path": "build/SQME52/obj/auto_03_801B75B4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801B9B18_text",
+      "target_path": "build/SQME52/obj/auto_fn_801B9B18_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801B9BF0_text",
+      "target_path": "build/SQME52/obj/auto_03_801B9BF0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801BFD1C_text",
+      "target_path": "build/SQME52/obj/auto_fn_801BFD1C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801BFDE4_text",
+      "target_path": "build/SQME52/obj/auto_03_801BFDE4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801C3554_text",
+      "target_path": "build/SQME52/obj/auto_fn_801C3554_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801C35D8_text",
+      "target_path": "build/SQME52/obj/auto_03_801C35D8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801C495C_text",
+      "target_path": "build/SQME52/obj/auto_fn_801C495C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801C49E0_text",
+      "target_path": "build/SQME52/obj/auto_03_801C49E0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801D2BAC_text",
+      "target_path": "build/SQME52/obj/auto_fn_801D2BAC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801D2D48_text",
+      "target_path": "build/SQME52/obj/auto_03_801D2D48_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801D451C_text",
+      "target_path": "build/SQME52/obj/auto_fn_801D451C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801D45C8_text",
+      "target_path": "build/SQME52/obj/auto_03_801D45C8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801D5C48_text",
+      "target_path": "build/SQME52/obj/auto_fn_801D5C48_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801D5CCC_text",
+      "target_path": "build/SQME52/obj/auto_03_801D5CCC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801D7668_text",
+      "target_path": "build/SQME52/obj/auto_fn_801D7668_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801D7768_text",
+      "target_path": "build/SQME52/obj/auto_03_801D7768_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801DC38C_text",
+      "target_path": "build/SQME52/obj/auto_fn_801DC38C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801DC410_text",
+      "target_path": "build/SQME52/obj/auto_03_801DC410_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801E1618_text",
+      "target_path": "build/SQME52/obj/auto_fn_801E1618_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801E169C_text",
+      "target_path": "build/SQME52/obj/auto_03_801E169C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801E381C_text",
+      "target_path": "build/SQME52/obj/auto_fn_801E381C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801E38A0_text",
+      "target_path": "build/SQME52/obj/auto_03_801E38A0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801E4220_text",
+      "target_path": "build/SQME52/obj/auto_fn_801E4220_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801E42A4_text",
+      "target_path": "build/SQME52/obj/auto_03_801E42A4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801E6564_text",
+      "target_path": "build/SQME52/obj/auto_fn_801E6564_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801E65E8_text",
+      "target_path": "build/SQME52/obj/auto_03_801E65E8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801E92B8_text",
+      "target_path": "build/SQME52/obj/auto_fn_801E92B8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801E933C_text",
+      "target_path": "build/SQME52/obj/auto_03_801E933C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801ECE78_text",
+      "target_path": "build/SQME52/obj/auto_fn_801ECE78_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801ECEFC_text",
+      "target_path": "build/SQME52/obj/auto_03_801ECEFC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801EF4F8_text",
+      "target_path": "build/SQME52/obj/auto_fn_801EF4F8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801EF57C_text",
+      "target_path": "build/SQME52/obj/auto_03_801EF57C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801F68F0_text",
+      "target_path": "build/SQME52/obj/auto_fn_801F68F0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801F69F4_text",
+      "target_path": "build/SQME52/obj/auto_fn_801F69F4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801F6AB0_text",
+      "target_path": "build/SQME52/obj/auto_fn_801F6AB0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801F6BA8_text",
+      "target_path": "build/SQME52/obj/auto_fn_801F6BA8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_801F6C20_text",
+      "target_path": "build/SQME52/obj/auto_fn_801F6C20_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801F6CA0_text",
+      "target_path": "build/SQME52/obj/auto_03_801F6CA0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/Runtime.PPCEABI.H/__init_cpp_exceptions",
+      "target_path": "build/SQME52/obj/Runtime.PPCEABI.H/__init_cpp_exceptions.o",
+      "scratch": {
+        "platform": "gc_wii",
+        "compiler": "mwcc_43_213",
+        "c_flags": "-nodefaults -proc gekko -align powerpc -enum int -fp hardware -Cpp_exceptions off -O4,p -inline auto -pragma \"cats off\" -pragma \"warn_notinlined off\" -maxerrors 1 -nosyspath -RTTI off -fp_contract on -str reuse -multibyte -DBUILD_VERSION=0 -DVERSION_SQME52 -DNDEBUG=1 -use_lmw_stmw on -str reuse,pool,readonly -gccinc -common off -inline auto"
+      },
+      "metadata": {
+        "reverse_fn_order": false,
+        "progress_categories": [
+          "sdk"
+        ],
+        "auto_generated": false
+      }
+    },
+    {
+      "name": "main/auto_09_806AA448_sdata",
+      "target_path": "build/SQME52/obj/auto_09_806AA448_sdata.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_801F76C8_text",
+      "target_path": "build/SQME52/obj/auto_03_801F76C8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802715E0_text",
+      "target_path": "build/SQME52/obj/auto_fn_802715E0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802715F4_text",
+      "target_path": "build/SQME52/obj/auto_03_802715F4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802778B0_text",
+      "target_path": "build/SQME52/obj/auto_fn_802778B0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802778C0_text",
+      "target_path": "build/SQME52/obj/auto_03_802778C0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80277E00_text",
+      "target_path": "build/SQME52/obj/auto_fn_80277E00_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80277E14_text",
+      "target_path": "build/SQME52/obj/auto_03_80277E14_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80279250_text",
+      "target_path": "build/SQME52/obj/auto_fn_80279250_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80279264_text",
+      "target_path": "build/SQME52/obj/auto_03_80279264_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8027B880_text",
+      "target_path": "build/SQME52/obj/auto_fn_8027B880_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8027B894_text",
+      "target_path": "build/SQME52/obj/auto_03_8027B894_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80284180_text",
+      "target_path": "build/SQME52/obj/auto_fn_80284180_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80284224_text",
+      "target_path": "build/SQME52/obj/auto_03_80284224_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028927C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028927C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802892C0_text",
+      "target_path": "build/SQME52/obj/auto_03_802892C0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802892D8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802892D8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80289344_text",
+      "target_path": "build/SQME52/obj/auto_fn_80289344_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802895AC_text",
+      "target_path": "build/SQME52/obj/auto_fn_802895AC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80289864_text",
+      "target_path": "build/SQME52/obj/auto_03_80289864_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80289878_text",
+      "target_path": "build/SQME52/obj/auto_fn_80289878_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80289B54_text",
+      "target_path": "build/SQME52/obj/auto_fn_80289B54_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80289C04_text",
+      "target_path": "build/SQME52/obj/auto_03_80289C04_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80289C24_text",
+      "target_path": "build/SQME52/obj/auto_fn_80289C24_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80289C68_text",
+      "target_path": "build/SQME52/obj/auto_fn_80289C68_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80289CDC_text",
+      "target_path": "build/SQME52/obj/auto_03_80289CDC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80289D0C_text",
+      "target_path": "build/SQME52/obj/auto_fn_80289D0C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80289DD4_text",
+      "target_path": "build/SQME52/obj/auto_03_80289DD4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80289E64_text",
+      "target_path": "build/SQME52/obj/auto_fn_80289E64_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028A008_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028A008_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028A23C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028A23C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028A3D8_text",
+      "target_path": "build/SQME52/obj/auto_03_8028A3D8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028A488_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028A488_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028A5E0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028A5E0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028A688_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028A688_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028A7D0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028A7D0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028A918_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028A918_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028A9C8_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028A9C8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028ABF4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028ABF4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028AE20_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028AE20_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028AEB8_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028AEB8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028B054_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028B054_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028B0EC_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028B0EC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028B288_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028B288_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028B2F0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028B2F0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028B6FC_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028B6FC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028BA60_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028BA60_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028BC58_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028BC58_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028C6A8_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028C6A8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028C7A0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028C7A0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028C9BC_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028C9BC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028CA80_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028CA80_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028CB74_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028CB74_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028CD84_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028CD84_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028CF80_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028CF80_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028D02C_text",
+      "target_path": "build/SQME52/obj/auto_03_8028D02C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028D04C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028D04C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028D0B8_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028D0B8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028D1D4_text",
+      "target_path": "build/SQME52/obj/auto_03_8028D1D4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028D24C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028D24C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028D404_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028D404_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028D4DC_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028D4DC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028D588_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028D588_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028D678_text",
+      "target_path": "build/SQME52/obj/auto_03_8028D678_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028D6FC_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028D6FC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028D820_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028D820_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028D8F4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028D8F4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028DBF0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028DBF0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028DD64_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028DD64_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028DE98_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028DE98_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028E2FC_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028E2FC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028E4D8_text",
+      "target_path": "build/SQME52/obj/auto_03_8028E4D8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028E4E8_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028E4E8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028E924_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028E924_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028E968_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028E968_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028E98C_text",
+      "target_path": "build/SQME52/obj/auto_03_8028E98C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028E9D4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028E9D4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EA1C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EA1C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028EA64_text",
+      "target_path": "build/SQME52/obj/auto_03_8028EA64_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EA88_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EA88_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EAD0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EAD0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028EB18_text",
+      "target_path": "build/SQME52/obj/auto_03_8028EB18_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EB3C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EB3C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028EB84_text",
+      "target_path": "build/SQME52/obj/auto_03_8028EB84_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EBF0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EBF0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EC38_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EC38_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EC88_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EC88_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028ECD0_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028ECD0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028ED18_text",
+      "target_path": "build/SQME52/obj/auto_03_8028ED18_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028ED98_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028ED98_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EDE4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EDE4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EF18_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EF18_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028EFBC_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028EFBC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028F054_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028F054_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028F2A4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028F2A4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028F358_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028F358_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028F464_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028F464_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028F4D8_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028F4D8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028F574_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028F574_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028F604_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028F604_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028F744_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028F744_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028F9EC_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028F9EC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028FAE4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028FAE4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028FBB8_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028FBB8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8028FC54_text",
+      "target_path": "build/SQME52/obj/auto_03_8028FC54_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028FCB4_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028FCB4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8028FEB8_text",
+      "target_path": "build/SQME52/obj/auto_fn_8028FEB8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802900CC_text",
+      "target_path": "build/SQME52/obj/auto_fn_802900CC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802901D4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802901D4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802902C8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802902C8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80290384_text",
+      "target_path": "build/SQME52/obj/auto_fn_80290384_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802903E8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802903E8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802906E0_text",
+      "target_path": "build/SQME52/obj/auto_fn_802906E0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802908D8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802908D8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802909D4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802909D4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80290A98_text",
+      "target_path": "build/SQME52/obj/auto_fn_80290A98_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80290DB4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80290DB4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80290E1C_text",
+      "target_path": "build/SQME52/obj/auto_fn_80290E1C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802913D0_text",
+      "target_path": "build/SQME52/obj/auto_fn_802913D0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80291410_text",
+      "target_path": "build/SQME52/obj/auto_fn_80291410_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80291504_text",
+      "target_path": "build/SQME52/obj/auto_fn_80291504_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80291588_text",
+      "target_path": "build/SQME52/obj/auto_fn_80291588_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802915DC_text",
+      "target_path": "build/SQME52/obj/auto_fn_802915DC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8029161C_text",
+      "target_path": "build/SQME52/obj/auto_03_8029161C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029162C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029162C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029166C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029166C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80291784_text",
+      "target_path": "build/SQME52/obj/auto_fn_80291784_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802917C4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802917C4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80291980_text",
+      "target_path": "build/SQME52/obj/auto_fn_80291980_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802919FC_text",
+      "target_path": "build/SQME52/obj/auto_fn_802919FC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80291A30_text",
+      "target_path": "build/SQME52/obj/auto_fn_80291A30_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80291B14_text",
+      "target_path": "build/SQME52/obj/auto_fn_80291B14_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80291E74_text",
+      "target_path": "build/SQME52/obj/auto_fn_80291E74_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029207C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029207C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802921CC_text",
+      "target_path": "build/SQME52/obj/auto_fn_802921CC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802922FC_text",
+      "target_path": "build/SQME52/obj/auto_fn_802922FC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802924F4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802924F4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802925F8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802925F8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029269C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029269C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029273C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029273C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802928C4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802928C4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80292AD4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80292AD4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80292C5C_text",
+      "target_path": "build/SQME52/obj/auto_fn_80292C5C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80292FF4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80292FF4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029332C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029332C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802933FC_text",
+      "target_path": "build/SQME52/obj/auto_fn_802933FC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802934C8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802934C8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802938B8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802938B8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80293A40_text",
+      "target_path": "build/SQME52/obj/auto_fn_80293A40_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80293B34_text",
+      "target_path": "build/SQME52/obj/auto_fn_80293B34_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80293BC0_text",
+      "target_path": "build/SQME52/obj/auto_fn_80293BC0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80293D60_text",
+      "target_path": "build/SQME52/obj/auto_fn_80293D60_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80293DA0_text",
+      "target_path": "build/SQME52/obj/auto_fn_80293DA0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80293EE8_text",
+      "target_path": "build/SQME52/obj/auto_fn_80293EE8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80293F28_text",
+      "target_path": "build/SQME52/obj/auto_fn_80293F28_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80293FC4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80293FC4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802940B0_text",
+      "target_path": "build/SQME52/obj/auto_fn_802940B0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8029421C_text",
+      "target_path": "build/SQME52/obj/auto_03_8029421C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80294314_text",
+      "target_path": "build/SQME52/obj/auto_fn_80294314_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80294408_text",
+      "target_path": "build/SQME52/obj/auto_fn_80294408_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8029448C_text",
+      "target_path": "build/SQME52/obj/auto_03_8029448C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802944C4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802944C4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80294598_text",
+      "target_path": "build/SQME52/obj/auto_fn_80294598_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80294660_text",
+      "target_path": "build/SQME52/obj/auto_03_80294660_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80294690_text",
+      "target_path": "build/SQME52/obj/auto_fn_80294690_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80294838_text",
+      "target_path": "build/SQME52/obj/auto_03_80294838_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80294920_text",
+      "target_path": "build/SQME52/obj/auto_fn_80294920_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802949D0_text",
+      "target_path": "build/SQME52/obj/auto_fn_802949D0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80294B74_text",
+      "target_path": "build/SQME52/obj/auto_fn_80294B74_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80294C88_text",
+      "target_path": "build/SQME52/obj/auto_fn_80294C88_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80294ED8_text",
+      "target_path": "build/SQME52/obj/auto_fn_80294ED8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80294FCC_text",
+      "target_path": "build/SQME52/obj/auto_03_80294FCC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80294FF0_text",
+      "target_path": "build/SQME52/obj/auto_fn_80294FF0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80295160_text",
+      "target_path": "build/SQME52/obj/auto_03_80295160_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802951B8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802951B8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802951DC_text",
+      "target_path": "build/SQME52/obj/auto_03_802951DC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80295240_text",
+      "target_path": "build/SQME52/obj/auto_fn_80295240_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80295288_text",
+      "target_path": "build/SQME52/obj/auto_fn_80295288_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802952D0_text",
+      "target_path": "build/SQME52/obj/auto_03_802952D0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802952F4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802952F4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029533C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029533C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80295384_text",
+      "target_path": "build/SQME52/obj/auto_03_80295384_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802953A8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802953A8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802953F0_text",
+      "target_path": "build/SQME52/obj/auto_03_802953F0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029545C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029545C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802954A4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802954A4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802954F4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802954F4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029553C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029553C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80295584_text",
+      "target_path": "build/SQME52/obj/auto_03_80295584_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80295670_text",
+      "target_path": "build/SQME52/obj/auto_fn_80295670_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80295720_text",
+      "target_path": "build/SQME52/obj/auto_03_80295720_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80295748_text",
+      "target_path": "build/SQME52/obj/auto_fn_80295748_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80295804_text",
+      "target_path": "build/SQME52/obj/auto_fn_80295804_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029583C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029583C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80295994_text",
+      "target_path": "build/SQME52/obj/auto_fn_80295994_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80295D7C_text",
+      "target_path": "build/SQME52/obj/auto_fn_80295D7C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80295E78_text",
+      "target_path": "build/SQME52/obj/auto_fn_80295E78_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80295FA4_text",
+      "target_path": "build/SQME52/obj/auto_03_80295FA4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80295FA8_text",
+      "target_path": "build/SQME52/obj/auto_fn_80295FA8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80296098_text",
+      "target_path": "build/SQME52/obj/auto_fn_80296098_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80296428_text",
+      "target_path": "build/SQME52/obj/auto_03_80296428_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802966B4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802966B4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8029679C_text",
+      "target_path": "build/SQME52/obj/auto_03_8029679C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802967D8_text",
+      "target_path": "build/SQME52/obj/auto_fn_802967D8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80296830_text",
+      "target_path": "build/SQME52/obj/auto_fn_80296830_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80296AD4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80296AD4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80296DD4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80296DD4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80296E30_text",
+      "target_path": "build/SQME52/obj/auto_fn_80296E30_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80296E8C_text",
+      "target_path": "build/SQME52/obj/auto_fn_80296E8C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80296FD4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80296FD4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802970A4_text",
+      "target_path": "build/SQME52/obj/auto_fn_802970A4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80297270_text",
+      "target_path": "build/SQME52/obj/auto_03_80297270_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80297274_text",
+      "target_path": "build/SQME52/obj/auto_fn_80297274_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_8029743C_text",
+      "target_path": "build/SQME52/obj/auto_03_8029743C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029756C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029756C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802976F4_text",
+      "target_path": "build/SQME52/obj/auto_03_802976F4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80297710_text",
+      "target_path": "build/SQME52/obj/auto_fn_80297710_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80297874_text",
+      "target_path": "build/SQME52/obj/auto_fn_80297874_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80298464_text",
+      "target_path": "build/SQME52/obj/auto_fn_80298464_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029856C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029856C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029866C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029866C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80298734_text",
+      "target_path": "build/SQME52/obj/auto_03_80298734_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029877C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029877C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80298874_text",
+      "target_path": "build/SQME52/obj/auto_fn_80298874_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802988D0_text",
+      "target_path": "build/SQME52/obj/auto_03_802988D0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80298908_text",
+      "target_path": "build/SQME52/obj/auto_fn_80298908_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80298A38_text",
+      "target_path": "build/SQME52/obj/auto_fn_80298A38_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80298CD4_text",
+      "target_path": "build/SQME52/obj/auto_fn_80298CD4_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80298D50_text",
+      "target_path": "build/SQME52/obj/auto_03_80298D50_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80298D5C_text",
+      "target_path": "build/SQME52/obj/auto_fn_80298D5C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80298EA8_text",
+      "target_path": "build/SQME52/obj/auto_03_80298EA8_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80298EBC_text",
+      "target_path": "build/SQME52/obj/auto_fn_80298EBC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80298F2C_text",
+      "target_path": "build/SQME52/obj/auto_fn_80298F2C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_80298F54_text",
+      "target_path": "build/SQME52/obj/auto_fn_80298F54_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_8029910C_text",
+      "target_path": "build/SQME52/obj/auto_fn_8029910C_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802992EC_text",
+      "target_path": "build/SQME52/obj/auto_03_802992EC_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802992F0_text",
+      "target_path": "build/SQME52/obj/auto_fn_802992F0_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_80299364_text",
+      "target_path": "build/SQME52/obj/auto_03_80299364_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802BA508_text",
+      "target_path": "build/SQME52/obj/auto_fn_802BA508_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802BA550_text",
+      "target_path": "build/SQME52/obj/auto_03_802BA550_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_fn_802C1E00_text",
+      "target_path": "build/SQME52/obj/auto_fn_802C1E00_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_03_802C1E84_text",
+      "target_path": "build/SQME52/obj/auto_03_802C1E84_text.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    },
+    {
+      "name": "main/auto_00_80004000_init",
+      "target_path": "build/SQME52/obj/auto_00_80004000_init.o",
+      "metadata": {
+        "progress_categories": [],
+        "auto_generated": true
+      }
+    }
+  ],
+  "progress_categories": [
+    {
+      "id": "game",
+      "name": "Game Code"
+    },
+    {
+      "id": "sdk",
+      "name": "SDK Code"
+    }
+  ]
+}
